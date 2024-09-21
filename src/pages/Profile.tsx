@@ -39,7 +39,7 @@ export default function Profile() {
             borderRadius="15px"
             padding="23.5px"
           >
-            <Header />
+            <Header theme="light" />
             <Flex
               position="absolute"
               bgGradient="linear-gradient(112.83deg, rgba(255, 255, 255, 0.82) 100%, rgba(255, 255, 255, 0.8) 110.84%)"

@@ -14,7 +14,14 @@ import { FaBell } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({
+  theme,
+  page,
+}: {
+  theme: "dark" | "light";
+  page: string;
+}) {
+  const themeColor = theme === "dark" ? "#718096" : "#FFFFFF";
   return (
     <Flex
       width="100%"
@@ -22,10 +29,10 @@ export default function Header() {
     >
       <Flex
         flexDir="column"
-        color={"#FFFFFF"}
+        color={themeColor}
       >
-        <Text>Page / Profile</Text>
-        <Text fontWeight={700}>Profile</Text>
+        <Text>Page / {page}</Text>
+        <Text fontWeight={700}>{page}</Text>
       </Flex>
 
       <Flex
@@ -60,7 +67,7 @@ export default function Header() {
             h="16px"
           >
             <Icon
-              color={"#FFFFFF"}
+              color={themeColor}
               w="12px"
               h="12px"
               as={FaUser}
@@ -68,7 +75,7 @@ export default function Header() {
             <Text
               fontSize="12px"
               fontWeight={700}
-              color={"#FFFFFF"}
+              color={themeColor}
               mt="3px"
             >
               Sign in
@@ -77,13 +84,13 @@ export default function Header() {
         </Link>
 
         <Icon
-          color={"#FFFFFF"}
+          color={themeColor}
           w="12px"
           h="12px"
           as={IoMdSettings}
         ></Icon>
         <Icon
-          color={"#FFFFFF"}
+          color={themeColor}
           w="12px"
           h="12px"
           as={FaBell}

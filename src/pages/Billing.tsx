@@ -23,7 +23,7 @@ import { RiPencilFill } from "react-icons/ri";
 import BillingInformation from "../components/billing-elements/BillingInformation";
 import Transactions from "../components/billing-elements/Transactions";
 
-export default function Dashboard() {
+export default function Billing() {
   const whiteColor = "#FFFFFF";
   const grayColor = "#A0AEC0";
   const darkColor = "#2D3748";
@@ -425,7 +425,6 @@ export default function Dashboard() {
 
           <Flex
             w={"100%"}
-            h={"538.5px"}
             gap={"24px"}
           >
             <Flex

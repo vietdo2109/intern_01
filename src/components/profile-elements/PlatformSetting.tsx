@@ -6,6 +6,7 @@ import {
   FormLabel,
   Switch,
 } from "@chakra-ui/react";
+
 export default function PlatformSetting() {
   const darkColor = "#2D3748";
   const grayColor = "#A0AEC0";

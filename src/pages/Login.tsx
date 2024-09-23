@@ -57,7 +57,6 @@ export default function () {
         h="100%"
         p="30px"
         pt="40px"
-        border="1px solid red"
         position={"relative"}
         flexDirection={"column"}
         justifyContent="space-between"

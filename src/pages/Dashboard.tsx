@@ -14,10 +14,10 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Dashboard() {
-  const whiteColor = "#FFFFFF";
-  const grayColor = "#A0AEC0";
-  const darkColor = "#2D3748";
-  const greenColor = "#4FD1C5";
+  // const whiteColor = "#FFFFFF";
+  // const grayColor = "#A0AEC0";
+  // const darkColor = "#2D3748";
+  // const greenColor = "#4FD1C5";
   return (
     <Layout>
       <Flex

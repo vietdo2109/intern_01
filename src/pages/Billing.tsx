@@ -443,6 +443,7 @@ export default function Billing() {
               <Transactions />
             </Flex>
           </Flex>
+          <Footer />
         </Flex>
       </Flex>
     </Layout>

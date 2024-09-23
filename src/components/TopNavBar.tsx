@@ -62,7 +62,7 @@ export default function TopNavBar({
           alignItems={"center"}
           className="nav-container"
         >
-          <Link to="#">
+          <Link to="/dashboard">
             <Box
               display="flex"
               alignItems={"center"}

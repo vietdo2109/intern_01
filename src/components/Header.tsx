@@ -14,7 +14,13 @@ import { FaBell } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-export default function Header({ theme }: { theme: "dark" | "light" }) {
+export default function Header({
+  theme,
+  page,
+}: {
+  theme: "dark" | "light";
+  page: string;
+}) {
   const themeColor = theme === "dark" ? "#718096" : "#FFFFFF";
   return (
     <Flex
@@ -25,8 +31,8 @@ export default function Header({ theme }: { theme: "dark" | "light" }) {
         flexDir="column"
         color={themeColor}
       >
-        <Text>Page / Profile</Text>
-        <Text fontWeight={700}>Profile</Text>
+        <Text>Page / {page}</Text>
+        <Text fontWeight={700}>{page}</Text>
       </Flex>
 
       <Flex

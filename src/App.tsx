@@ -1,10 +1,11 @@
-import React from "react";
 import "./App.css";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import { Routes, Route } from "react-router-dom";
 import Profile from "./pages/Profile";
 import Dashboard from "./pages/Dashboard";
+import Billing from "./pages/Billing";
+import Tables from "./pages/Tables";
 function App() {
   return (
     <div className="App">
@@ -19,11 +20,11 @@ function App() {
         />
         <Route
           path="/billing"
-          element={<Profile />}
+          element={<Billing />}
         />
         <Route
           path="/tables"
-          element={<Profile />}
+          element={<Tables />}
         />
         <Route
           path="/login"

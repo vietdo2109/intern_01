@@ -3,16 +3,13 @@ import { Flex, Link, Text, Box } from "@chakra-ui/react";
 export default function Footer() {
   return (
     <Flex
-      w="60%"
+      w="100%"
       minW="800px"
       justifyContent={"space-between"}
       justifySelf="flex-end"
-      height="40px"
       color="#A0AEC0"
       gap="70px"
-      paddingBottom="30px"
       paddingTop="40px"
-      mt="60px"
     >
       <Box flex="1">
         <Text fontSize="12px">

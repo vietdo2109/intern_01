@@ -209,7 +209,9 @@ export default function () {
             </Flex>
           </Flex>
         </Flex>
-        <Footer />
+        <Box w={"60%"}>
+          <Footer />
+        </Box>
       </Flex>
     </Flex>
   );

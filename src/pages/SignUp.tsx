@@ -40,6 +40,7 @@ export default function SignUp() {
       w={"100%"}
       justifyContent={"center"}
       h={"100vh"}
+      mb={"20px"}
     >
       <Flex
         w={"100%"}
@@ -341,7 +342,9 @@ export default function SignUp() {
           </Flex>
         </Flex>
 
-        <Footer />
+        <Box w={"60%"}>
+          <Footer />
+        </Box>
       </Flex>
     </Flex>
   );

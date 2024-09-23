@@ -21,6 +21,7 @@ export default function Profile() {
         zIndex={1}
         right={0}
         flexDir="column"
+        paddingBottom={"20px"}
       >
         <Flex
           flex="1"

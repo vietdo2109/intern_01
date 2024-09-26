@@ -87,12 +87,14 @@ export default function Header({
           w="12px"
           h="12px"
           as={IoMdSettings}
+          cursor={"pointer"}
         ></Icon>
         <Icon
           color={themeColor}
           w="12px"
           h="12px"
           as={FaBell}
+          cursor={"pointer"}
         ></Icon>
       </Flex>
     </Flex>

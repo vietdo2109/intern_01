@@ -7,13 +7,20 @@ import Dashboard from "./pages/Dashboard";
 import Billing from "./pages/Billing";
 import Tables from "./pages/Tables";
 import RTL from "./pages/RTL";
+
+import { Navigate } from "react-router-dom";
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route
           path="/"
-          element={<Dashboard />}
+          element={
+            <Navigate
+              to="/dashboard"
+              replace={true}
+            />
+          }
         />
         <Route
           path="/signup"

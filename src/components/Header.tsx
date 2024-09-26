@@ -4,7 +4,6 @@ import {
   InputLeftElement,
   Input,
   Text,
-  Box,
   Icon,
 } from "@chakra-ui/react";
 import { FaSearch } from "react-icons/fa";

@@ -1,5 +1,4 @@
 import React from "react";
-import Test from "../components/Test";
 import {
   Box,
   Flex,
@@ -15,7 +14,7 @@ import TopNavBar from "../components/TopNavBar";
 import signInImage from "../assets/images/signInImage.png";
 import Footer from "../components/Footer";
 
-export default function () {
+export default function Login() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
 

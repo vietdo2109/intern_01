@@ -1,4 +1,4 @@
-import { Flex, Box, Text, Icon, Button } from "@chakra-ui/react";
+import { Flex, Text, Icon } from "@chakra-ui/react";
 import { Transaction, transactionList } from "./Transaction";
 import { IoArrowDown } from "react-icons/io5";
 import { FaExclamation } from "react-icons/fa6";

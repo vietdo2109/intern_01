@@ -6,7 +6,6 @@ import { FaUser } from "react-icons/fa";
 import { IoDocument } from "react-icons/io5";
 import { IoRocketSharp } from "react-icons/io5";
 import { IconType } from "react-icons";
-import { Icon } from "@chakra-ui/react";
 
 export interface SideMenuItem {
   icon: IconType;

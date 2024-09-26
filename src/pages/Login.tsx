@@ -1,5 +1,4 @@
 import React from "react";
-import Test from "../components/Test";
 import {
   Box,
   Flex,
@@ -15,7 +14,7 @@ import TopNavBar from "../components/TopNavBar";
 import signInImage from "../assets/images/signInImage.png";
 import Footer from "../components/Footer";
 
-export default function () {
+export default function Login() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
 
@@ -57,7 +56,6 @@ export default function () {
         h="100%"
         p="30px"
         pt="40px"
-        border="1px solid red"
         position={"relative"}
         flexDirection={"column"}
         justifyContent="space-between"
@@ -210,7 +208,9 @@ export default function () {
             </Flex>
           </Flex>
         </Flex>
-        <Footer />
+        <Box w={"60%"}>
+          <Footer />
+        </Box>
       </Flex>
     </Flex>
   );

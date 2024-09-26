@@ -2,10 +2,9 @@ import { Box, Button, Flex, HStack, Icon, Text } from "@chakra-ui/react";
 import BlackLogo from "../assets/logos/logo-creative-tim-black.svg";
 import { SideMenuItem } from "./SideMenuItems";
 import { sideMenuItems } from "./SideMenuItems";
-import { NavLink } from "react-router-dom";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import MenuItem from "./MenuItem";
-
+import { Link } from "react-router-dom";
 import SidebarHelpBg from "../assets/images/SidebarHelpImage.png";
 
 export default function SideMenu() {
@@ -28,25 +27,29 @@ export default function SideMenu() {
         justifyContent="center"
         alignItems="center"
       >
-        <HStack
-          height="21px"
-          justifyItems={"center"}
-          alignItems={"center"}
-          gap={"10px"}
-        >
-          <img
-            src={BlackLogo}
-            alt="logo"
-          />
-          <Text
-            fontWeight="700"
-            color="#2D3748"
-            fontSize="14px"
-            className="title"
+        <Link to={"/dashboard"}>
+          <HStack
+            height="21px"
+            justifyItems={"center"}
+            alignItems={"center"}
+            gap={"10px"}
+            cursor={"pointer"}
           >
-            PURITY UI DASHBOARD
-          </Text>
-        </HStack>
+            <img
+              src={BlackLogo}
+              alt="logo"
+            />
+            <Text
+              fontWeight="700"
+              color="#2D3748"
+              fontSize="14px"
+              className="title"
+            >
+              PURITY UI DASHBOARD
+            </Text>
+          </HStack>
+        </Link>
+
         <Box
           mt="30px"
           h="2px"

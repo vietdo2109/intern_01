@@ -35,24 +35,28 @@ export default function TopNavBar({
       borderRadius="15px"
       shadow={shadow === true ? "md" : "none"}
     >
-      <HStack
-        justifyItems={"center"}
-        alignItems={"center"}
-        gap={"10px"}
-      >
-        <img
-          src={logoColor === "black" ? BlackLogo : WhiteLogo}
-          alt="logo"
-        />
-        <Text
-          fontWeight="700"
-          color={textColor}
-          fontSize="14px"
-          className="title"
+      <Link to={"/dashboard"}>
+        <HStack
+          justifyItems={"center"}
+          alignItems={"center"}
+          gap={"10px"}
+          cursor={"pointer"}
         >
-          PURITY UI DASHBOARD
-        </Text>
-      </HStack>
+          <img
+            src={logoColor === "black" ? BlackLogo : WhiteLogo}
+            alt="logo"
+          />
+          <Text
+            fontWeight="700"
+            color={textColor}
+            fontSize="14px"
+            className="title"
+          >
+            PURITY UI DASHBOARD
+          </Text>
+        </HStack>
+      </Link>
+
       <Flex
         alignItems={"center"}
         justifyContent={"space-around"}
@@ -62,7 +66,7 @@ export default function TopNavBar({
           alignItems={"center"}
           className="nav-container"
         >
-          <Link to="#">
+          <Link to="/dashboard">
             <Box
               display="flex"
               alignItems={"center"}

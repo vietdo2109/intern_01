@@ -8,6 +8,7 @@ import ProfileInfo from "../components/profile-elements/ProfileInfo";
 import Conversation from "../components/profile-elements/Conversation";
 import Projects from "../components/profile-elements/Projects";
 import ProfileImg from "../assets/images/Credits to Unsplash.com three.png";
+import { RiPencilFill } from "react-icons/ri";
 
 import { BsBoxFill } from "react-icons/bs";
 
@@ -70,7 +71,28 @@ export default function Profile() {
                   bgSize="cover"
                   bgRepeat={"no-repeat"}
                   borderRadius="12px"
-                ></Box>
+                  position={"relative"}
+                >
+                  <Flex
+                    bg={"#FFFFFF"}
+                    shadow={"md"}
+                    w={"26px"}
+                    h={"26px"}
+                    justifyContent="center"
+                    alignItems={"center"}
+                    borderRadius={"8px"}
+                    position={"absolute"}
+                    right={"-5px"}
+                    bottom={"-5px"}
+                  >
+                    <Icon
+                      as={RiPencilFill}
+                      w={"12px"}
+                      h={"12px"}
+                      color={"#4FD1C5"}
+                    ></Icon>
+                  </Flex>
+                </Box>
                 <Flex
                   flexDir="column"
                   justifyContent="center"

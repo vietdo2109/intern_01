@@ -119,6 +119,7 @@ export default function Dashboard() {
                     color={darkColor}
                     fontSize={"10px"}
                     fontWeight={700}
+                    cursor="pointer"
                   >
                     Read more
                   </Text>
@@ -184,6 +185,7 @@ export default function Dashboard() {
                       color={whiteColor}
                       fontSize={"10px"}
                       fontWeight={700}
+                      cursor="pointer"
                     >
                       Read more
                     </Text>

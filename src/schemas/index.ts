@@ -9,8 +9,17 @@ export const loginFormSchema = Yup.object().shape({
 export const SignUpJoiSchema = Joi.object({
   username: Joi.string().alphanum().min(3).max(30).required(),
   password: Joi.string()
-    .pattern(new RegExp("^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$"))
-    .message("contains at least eight characters, one letter and one number"),
+    .min(8) // Minimum length 8 characters
+    .pattern(new RegExp("(?=.*[a-z])")) // At least one lowercase letter
+    .pattern(new RegExp("(?=.*[A-Z])")) // At least one uppercase letter
+    .pattern(new RegExp("(?=.*[0-9])")) // At least one number
+    .pattern(new RegExp("(?=.*[^a-zA-Z0-9])")) // At least one special character
+    .required()
+    .messages({
+      "string.min": "Password must be at least 8 characters long.",
+      "string.pattern.base":
+        "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.",
+    }),
   repeat_password: Joi.valid(Joi.ref("password")).required().messages({
     "any.only": "Passwords must match",
   }),

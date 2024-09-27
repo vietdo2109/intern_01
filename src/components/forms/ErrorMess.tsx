@@ -9,6 +9,7 @@ export default function ErrorMess({ error }: { error: string | undefined }) {
       color={"red"}
       fontSize={"12px"}
       fontWeight={"400"}
+      maxW={"350px"}
     >
       {error}
     </Text>

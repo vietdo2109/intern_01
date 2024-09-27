@@ -42,8 +42,11 @@ export default function OrdersOverview() {
           flexDirection={"column"}
           pt={"30px"}
         >
-          {oders.map(({ icon, title, time, color }: Oder) => (
-            <Flex gap={"19px"}>
+          {oders.map(({ icon, title, time, color }: Oder, index) => (
+            <Flex
+              gap={"19px"}
+              key={index}
+            >
               <Flex
                 w={"16px"}
                 flexDir={"column"}

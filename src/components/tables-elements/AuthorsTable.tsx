@@ -58,16 +58,19 @@ export default function AuthorsTable() {
         </Thead>
         <Tbody>
           {authorList.map(
-            ({
-              profileImg,
-              username,
-              email,
-              func1,
-              func2,
-              status,
-              employedDate,
-            }: Author) => (
-              <Tr>
+            (
+              {
+                profileImg,
+                username,
+                email,
+                func1,
+                func2,
+                status,
+                employedDate,
+              }: Author,
+              index: number
+            ) => (
+              <Tr key={index}>
                 <Td>
                   <Flex
                     alignItems={"center"}

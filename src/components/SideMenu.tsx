@@ -57,10 +57,13 @@ export default function SideMenu() {
           bgGradient="linear-gradient(90deg, rgba(224, 225, 226, 0) 0%, #E0E1E2 49.52%, rgba(224, 225, 226, 0.15625) 99.04%)"
           mb="22.5px"
         ></Box>
-        {sideMenuItems.map((item: SideMenuItem) => {
+        {sideMenuItems.map((item: SideMenuItem, index: number) => {
           if (item.title === "Profile") {
             return (
-              <>
+              <Box
+                key={index}
+                width="100%"
+              >
                 <Box
                   width="100%"
                   padding="12px"
@@ -81,11 +84,12 @@ export default function SideMenu() {
                   icon={item.icon}
                   url={item.url}
                 />
-              </>
+              </Box>
             );
           } else {
             return (
               <MenuItem
+                key={index}
                 title={item.title}
                 icon={item.icon}
                 url={item.url}

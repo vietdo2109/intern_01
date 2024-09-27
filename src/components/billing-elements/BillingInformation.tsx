@@ -27,8 +27,9 @@ export default function BillingInformation() {
         gap={"24px"}
       >
         {BillingInfomation.map(
-          ({ user, companyName, email, VATNumber }: Bill) => (
+          ({ user, companyName, email, VATNumber }: Bill, index: number) => (
             <Flex
+              key={index}
               bg={bgColor}
               borderRadius={"12px"}
               padding={"26px"}

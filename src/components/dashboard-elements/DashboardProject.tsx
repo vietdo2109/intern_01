@@ -126,14 +126,17 @@ export default function DashboardProject() {
           </Thead>
           <Tbody>
             {projectDList.map(
-              ({
-                iconSVG,
-                projectName,
-                budget,
-                member,
-                completionRate,
-              }: ProjectD) => (
-                <Tr>
+              (
+                {
+                  iconSVG,
+                  projectName,
+                  budget,
+                  member,
+                  completionRate,
+                }: ProjectD,
+                index
+              ) => (
+                <Tr key={index}>
                   <Td>
                     <Flex
                       alignItems={"center"}
@@ -162,8 +165,9 @@ export default function DashboardProject() {
                     alignItems={"center"}
                   >
                     <AvatarGroup max={5}>
-                      {member.map((mem) => (
+                      {member.map((mem, index) => (
                         <Avatar
+                          key={index}
                           src={mem}
                           ml={"2px"}
                           w={"20px"}

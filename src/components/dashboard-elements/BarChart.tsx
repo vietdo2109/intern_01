@@ -87,8 +87,9 @@ export default function BarChart() {
           justifyContent={"space-between"}
           alignItems={"flex-end"}
         >
-          {BarChartData.map((element) => (
+          {BarChartData.map((element, index) => (
             <Box
+              key={index}
               h={`${element / 5}%`}
               width={"6px"}
               borderRadius={"15px"}

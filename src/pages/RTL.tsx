@@ -1,5 +1,7 @@
 import { Flex, Box } from "@chakra-ui/react";
 import Layout from "../components/Layout";
+import BasicForm from "../components/forms/BasicForm";
+
 export default function RTL() {
   return (
     <Layout>
@@ -18,7 +20,9 @@ export default function RTL() {
           gap={"24px"}
           flexDir={"column"}
         >
-          <Box h={"100vh"}></Box>
+          <Box h={"100vh"}>
+            <BasicForm />
+          </Box>
         </Flex>
       </Flex>
     </Layout>

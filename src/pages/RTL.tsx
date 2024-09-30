@@ -15,12 +15,11 @@ export default function RTL() {
         <Flex
           flex="1"
           width="100%"
-          h={"100vh"}
           padding="24px"
           gap={"24px"}
           flexDir={"column"}
         >
-          <Box h={"100vh"}>
+          <Box>
             <BasicForm />
           </Box>
         </Flex>

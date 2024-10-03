@@ -121,7 +121,10 @@ export default function BasicForm() {
     setValue("username", "");
   };
   return (
-    <Box width={"360px"}>
+    <Box
+      width={"360px"}
+      border={"1px solid red"}
+    >
       <form onSubmit={handleSubmit(onSubmit, onError)}>
         <Flex
           flexDir={"column"}

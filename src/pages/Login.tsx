@@ -15,14 +15,7 @@ import signInImage from "../assets/images/signInImage.png";
 import Footer from "../components/Footer";
 import { loginFormSchema } from "../schemas";
 
-import {
-  Formik,
-  FormikHelpers,
-  FormikProps,
-  Form,
-  Field,
-  FieldProps,
-} from "formik";
+import { Formik, Form } from "formik";
 
 interface LoginFormValues {
   email: string;

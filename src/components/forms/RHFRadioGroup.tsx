@@ -27,7 +27,7 @@ export default function RHFRadioGroup<T extends FieldValues>({
           {options?.map((option) => (
             <Radio
               ref={ref}
-              value={option.id}
+              value={option.id + ""}
               key={option.id}
             >
               {option.label}

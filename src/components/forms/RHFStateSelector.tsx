@@ -1,11 +1,11 @@
 import React from "react";
 import { Checkbox, CheckboxGroup, Stack } from "@chakra-ui/react";
 import { Controller, FieldValues, Path, useFormContext } from "react-hook-form";
-import { State } from "../../types/state";
+import { Option } from "../../types/option";
 
 type Props<T extends FieldValues> = {
   name: Path<T>;
-  options?: State[];
+  options?: Option[];
 };
 
 export default function RHFStateSelector<T extends FieldValues>({
@@ -30,10 +30,10 @@ export default function RHFStateSelector<T extends FieldValues>({
           >
             {options?.map((option) => (
               <Checkbox
-                value={option.value}
-                key={option.value}
+                value={option.id}
+                key={option.id}
               >
-                {option.value}
+                {option.label}
               </Checkbox>
             ))}
           </Stack>

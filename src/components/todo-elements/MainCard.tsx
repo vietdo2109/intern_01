@@ -21,9 +21,19 @@ export default function MainCard({
     modalProps.onOpen();
   };
 
+  let taskCount = 0;
+
   // const todos = useSelector((state: RootState) => state.todos);
 
   const { data: todos } = useGetTodosQuery({});
+
+  if (todos) {
+    for (const todo of todos) {
+      if (todo.type?.value === type) {
+        taskCount++;
+      }
+    }
+  }
 
   const blueColor = "#1D81EB";
   const orangeColor = "#F5A762";
@@ -70,7 +80,7 @@ export default function MainCard({
           fontWeight={700}
           fontSize={"14px"}
         >
-          3 {type === "Completed" ? "completed" : "open"} tasks
+          {taskCount} {type === "Completed" ? "completed" : "open"} tasks
         </Text>
       </Flex>
 

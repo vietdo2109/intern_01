@@ -16,6 +16,7 @@ import { DevTool } from "@hookform/devtools";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../state/store";
 import { allTags } from "../../types/todoTypes/Tag";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Todo } from "../../state/todo/TodoSlice";
 // import { addTask } from "../../state/todo/TodoSlice";
@@ -35,7 +36,7 @@ export default function AddTaskModal({
     (state: RootState) => state.modalType.value
   );
   // const todos = useSelector((state: RootState) => state.todos);
-  const [createTodoMutation, {}] = useCreateTodosMutation();
+  const [createTodoMutation, { isSuccess }] = useCreateTodosMutation();
 
   function nextTodoId(todos: Todo[]) {
     const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1);
@@ -45,10 +46,8 @@ export default function AddTaskModal({
   const {
     register,
     handleSubmit,
-    formState: { errors },
-    control,
-    watch,
     reset,
+    formState: { errors },
   } = useForm<Omit<Todo, "id" | "type">>({
     defaultValues: {
       text: "",
@@ -80,16 +79,15 @@ export default function AddTaskModal({
     onClose();
   };
 
+  useEffect(() => {
+    if (isSuccess) {
+      reset(); // Reset form values
+      onClose(); // Close modal
+    }
+  }, [isSuccess, reset, onClose]);
+
   const onError = (errors: any) => {
     console.log("Form errors:", errors);
-  };
-
-  const handleReset = () => {
-    reset({
-      text: "",
-      date: "",
-      tags: [],
-    });
   };
 
   return (

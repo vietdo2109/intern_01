@@ -5,6 +5,8 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ChakraProvider } from "@chakra-ui/react";
+import { Provider } from "react-redux";
+import { store } from "./state/store";
 
 const queryClient = new QueryClient();
 const root = ReactDOM.createRoot(
@@ -14,7 +16,9 @@ root.render(
   <BrowserRouter>
     <ChakraProvider>
       <QueryClientProvider client={queryClient}>
-        <App />
+        <Provider store={store}>
+          <App />
+        </Provider>
       </QueryClientProvider>
     </ChakraProvider>
   </BrowserRouter>

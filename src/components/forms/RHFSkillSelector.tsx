@@ -1,4 +1,3 @@
-import React from "react";
 import { CheckboxGroup, Stack, Checkbox } from "@chakra-ui/react";
 
 import { Controller, FieldValues, Path, useFormContext } from "react-hook-form";

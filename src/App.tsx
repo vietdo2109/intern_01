@@ -9,6 +9,7 @@ import Tables from "./pages/Tables";
 import RTL from "./pages/RTL";
 
 import { Navigate } from "react-router-dom";
+import TodoList from "./pages/TodoList";
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,10 @@ function App() {
         <Route
           path="/rtl"
           element={<RTL />}
+        />
+        <Route
+          path="/todo"
+          element={<TodoList />}
         />
         <Route
           path="/login"

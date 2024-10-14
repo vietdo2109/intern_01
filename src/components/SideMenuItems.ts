@@ -6,6 +6,7 @@ import { FaUser } from "react-icons/fa";
 import { IoDocument } from "react-icons/io5";
 import { IoRocketSharp } from "react-icons/io5";
 import { IconType } from "react-icons";
+import { RiTodoFill } from "react-icons/ri";
 
 export interface SideMenuItem {
   icon: IconType;
@@ -33,6 +34,11 @@ export const sideMenuItems: SideMenuItem[] = [
     icon: AiFillTool,
     title: "RTL",
     url: "/rtl",
+  },
+  {
+    icon: RiTodoFill,
+    title: "To-do List",
+    url: "/todo",
   },
   {
     icon: FaUser,

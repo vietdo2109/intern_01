@@ -25,6 +25,7 @@ export default function Header({
     <Flex
       width="100%"
       justifyContent="space-between"
+      height={"40px"}
     >
       <Flex
         flexDir="column"

@@ -63,14 +63,11 @@ export default function ProjectsTable() {
         </Thead>
         <Tbody>
           {projectList.map(
-            ({
-              iconSVG,
-              projectName,
-              budget,
-              status,
-              completionRate,
-            }: Project) => (
-              <Tr>
+            (
+              { iconSVG, projectName, budget, status, completionRate }: Project,
+              index
+            ) => (
+              <Tr key={index}>
                 <Td>
                   <Flex
                     alignItems={"center"}

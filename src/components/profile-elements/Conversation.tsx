@@ -28,8 +28,12 @@ export default function Conversation() {
         </Text>
 
         {conversations.map(
-          ({ imgSrc, username, content }: ConversationContent) => (
+          (
+            { imgSrc, username, content }: ConversationContent,
+            index: number
+          ) => (
             <Flex
+              key={index}
               gap="16px"
               alignItems="center"
             >

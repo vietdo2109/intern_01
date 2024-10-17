@@ -1,17 +1,14 @@
-import React from "react";
-import { Checkbox, CheckboxGroup, Stack } from "@chakra-ui/react";
-import { Controller, FieldValues, Path, useFormContext } from "react-hook-form";
-import { Option } from "../../types/option";
+import React from 'react';
+import { Checkbox, CheckboxGroup, Stack } from '@chakra-ui/react';
+import { Controller, FieldValues, Path, useFormContext } from 'react-hook-form';
+import { Option } from '../../types/mediumFormTypes/option';
 
 type Props<T extends FieldValues> = {
   name: Path<T>;
   options?: Option[];
 };
 
-export default function RHFStateSelector<T extends FieldValues>({
-  name,
-  options,
-}: Props<T>) {
+export default function RHFStateSelector<T extends FieldValues>({ name, options }: Props<T>) {
   const { control } = useFormContext();
 
   return (
@@ -19,20 +16,10 @@ export default function RHFStateSelector<T extends FieldValues>({
       control={control}
       name={name}
       render={({ field: { ref, ...restField } }) => (
-        <CheckboxGroup
-          colorScheme="gray"
-          {...restField}
-        >
-          <Stack
-            borderRadius={"6px"}
-            spacing={[1, 5]}
-            direction={["column"]}
-          >
+        <CheckboxGroup colorScheme="gray" {...restField}>
+          <Stack borderRadius={'6px'} spacing={[1, 5]} direction={['column']}>
             {options?.map((option) => (
-              <Checkbox
-                value={option.id}
-                key={option.id}
-              >
+              <Checkbox value={option.id} key={option.id}>
                 {option.label}
               </Checkbox>
             ))}

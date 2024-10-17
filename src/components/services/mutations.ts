@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Schema } from '../../schemas/zodSchema';
+import { Schema } from '@schemas/zodSchema';
 import axios from 'axios';
 import { mapData } from '../../utils/mapData';
 import { omit } from 'lodash';

@@ -1,7 +1,7 @@
 import { Flex, Box, Text, Button } from '@chakra-ui/react';
 import { projects } from './project';
 import { Project } from './project';
-import { darkColor, grayColor, greenColor } from '../../../constants/colors';
+import { darkColor, grayColor, greenColor } from '@constants/colors';
 
 export default function Projects() {
   return (

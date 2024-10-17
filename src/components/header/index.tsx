@@ -5,7 +5,7 @@ import { FaBell as notificationIcon } from 'react-icons/fa';
 import { IoMdSettings as settingIcon } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { FC } from 'react';
-import { grayTextColor, whiteColor } from '../../constants/colors';
+import { grayTextColor, whiteColor } from '@constants/colors';
 type HeaderProps = {
   theme: 'dark' | 'light';
   page: string;

@@ -1,7 +1,7 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { ResponsiveLine } from '@nivo/line';
 import { lineData } from './lineGraphData';
-import { whiteColor, grayColor, darkColor } from '../../../constants/colors';
+import { whiteColor, grayColor, darkColor } from '@constants/colors';
 
 export default function LineGraph() {
   return (

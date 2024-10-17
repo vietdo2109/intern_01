@@ -1,11 +1,11 @@
 import { Flex, Text } from '@chakra-ui/react';
-import { Layout } from '../../components/layout';
-import { Footer } from '../../components/footer';
-import { Header } from '../../components/header';
-import AuthorsTable from '../../components/tables/authorsTable';
-import ProjectsTable from '../../components/tables/projects';
+import { Layout } from '@components/layout';
+import { Footer } from '@components/footer';
+import { Header } from '@components/header';
+import AuthorsTable from '@components/tables/authorsTable';
+import ProjectsTable from '@components/tables/projects';
 
-import { darkColor } from '../../constants/colors';
+import { darkColor } from '@constants/colors';
 
 export default function Tables() {
   return (

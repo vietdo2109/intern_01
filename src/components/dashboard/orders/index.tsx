@@ -1,6 +1,6 @@
 import { Box, Flex, Text, Icon } from '@chakra-ui/react';
 import { Oder, oders } from './order';
-import { whiteColor, darkColor, grayColor } from '../../../constants/colors';
+import { whiteColor, darkColor, grayColor } from '@constants/colors';
 
 export default function OrdersOverview() {
   return (

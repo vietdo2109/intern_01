@@ -2,16 +2,16 @@ import { useState } from 'react';
 import { Flex, Box, Text, Icon, useDisclosure } from '@chakra-ui/react';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 import { FaRegCalendarAlt } from 'react-icons/fa';
-import { Todo } from '../../../state/todo/todoSlice';
+import { Todo } from '@state/todo/todoSlice';
 import {
   useDeleteTodoMutation,
   useGetTodoQuery,
   useUpdateTodoMutation,
-} from '../../../state/todos/todosApiSlice';
+} from '@state/todos/todosApiSlice';
 import Tag from '../tag';
 import { allTags } from '../../../types/todoTypes/tag';
 import { UpdateTaskModal } from '../updateTaskModal';
-import { grayColor } from '../../../constants/colors';
+import { grayColor } from '@constants/colors';
 
 export default function TaskCard({ text, tags, type, date, id }: Todo) {
   const [isTaskMenuVisible, setIsTaskMenuVidible] = useState(false);

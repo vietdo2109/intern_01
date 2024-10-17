@@ -1,5 +1,5 @@
 import { Flex, Box, Text, FormControl, FormLabel, Switch } from '@chakra-ui/react';
-import { darkColor, grayColor } from '../../../constants/colors';
+import { darkColor, grayColor } from '@constants/colors';
 
 export default function PlatformSetting() {
   return (

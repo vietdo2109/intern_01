@@ -4,7 +4,7 @@ import { IoNotifications as notificationIcon } from 'react-icons/io5';
 import { FaShoppingCart as shoppingCartIcon } from 'react-icons/fa';
 import { BsCreditCardFill as creditCardIcon } from 'react-icons/bs';
 import { FaDropbox as dropboxIcon } from 'react-icons/fa';
-import adobeIcon from '../../../assets/svgs/adobeLogo.svg';
+import adobeIcon from '@assets/svgs/adobeLogo.svg';
 
 export interface Oder {
   icon: IconType | string;

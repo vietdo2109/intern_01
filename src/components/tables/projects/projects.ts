@@ -1,8 +1,8 @@
-import icon1 from '../../../assets/svgs/adobeLogo.svg';
-import icon2 from '../../../assets/svgs/blueALogo.svg';
-import icon3 from '../../../assets/svgs/slackLogo.svg';
-import icon4 from '../../../assets/svgs/spotifyLogo.svg';
-import icon5 from '../../../assets/svgs/jiraLogo.svg';
+import icon1 from '@assets/svgs/adobeLogo.svg';
+import icon2 from '@assets/svgs/blueALogo.svg';
+import icon3 from '@assets/svgs/slackLogo.svg';
+import icon4 from '@assets/svgs/spotifyLogo.svg';
+import icon5 from '@assets/svgs/jiraLogo.svg';
 
 export type Project = {
   iconSVG: string;

@@ -1,11 +1,11 @@
 import { Box, Button, Flex, HStack, Icon, Text } from '@chakra-ui/react';
-import BlackLogo from '../../assets/logos/faviconBlack.svg';
+import BlackLogo from '@assets/logos/faviconBlack.svg';
 import { SideMenuItem, sideMenuItems } from './sideMenuItem/sideMenuItems';
 import { BsFillQuestionCircleFill } from 'react-icons/bs';
 import { MenuItem } from './sideMenuItem';
 import { Link } from 'react-router-dom';
-import SidebarHelpBg from '../../assets/images/sidebarHelpImage.png';
-import { greenColor, darkColor, whiteColor, bgColor } from '../../constants/colors';
+import SidebarHelpBg from '@assets/images/sidebarHelpImage.png';
+import { greenColor, darkColor, whiteColor, bgColor } from '@constants/colors';
 
 export default function SideMenu() {
   return (

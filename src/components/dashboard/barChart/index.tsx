@@ -6,7 +6,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 import { AiFillTool } from 'react-icons/ai';
 import { IconType } from 'react-icons';
 import { FC } from 'react';
-import { whiteColor, grayColor, darkColor, greenColor } from '../../../constants/colors';
+import { whiteColor, grayColor, darkColor, greenColor } from '@constants/colors';
 
 export default function BarChart() {
   return (

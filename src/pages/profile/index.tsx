@@ -1,19 +1,19 @@
 import { Flex, Box, Text, Icon } from '@chakra-ui/react';
 
-import { Layout } from '../../components/layout';
-import { Header } from '../../components/header';
-import { Footer } from '../../components/footer';
-import PlatformSetting from '../../components/profile/platformSetting/PlatformSetting';
-import ProfileInfo from '../../components/profile/profileInfo';
-import Conversation from '../../components/profile/conversations';
-import Projects from '../../components/profile/projects/projects';
+import { Layout } from '@components/layout';
+import { Header } from '@components/header';
+import { Footer } from '@components/footer';
+import PlatformSetting from '@components/profile/platformSetting/PlatformSetting';
+import ProfileInfo from '@components/profile/profileInfo';
+import Conversation from '@components/profile/conversations';
+import Projects from '@components/profile/projects/projects';
 
-import ProfileImg from '../../assets/images/conversationAvtThree.png';
-import profileBgImage from '../../assets/images/profileBackground.png';
+import ProfileImg from '@assets/images/conversationAvtThree.png';
+import profileBgImage from '@assets/images/profileBackground.png';
 
 import { RiPencilFill } from 'react-icons/ri';
 import { BsBoxFill } from 'react-icons/bs';
-import { darkColor } from '../../constants/colors';
+import { darkColor } from '@constants/colors';
 
 export default function Profile() {
   return (

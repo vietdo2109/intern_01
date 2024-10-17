@@ -3,7 +3,7 @@ import { useForm, useFieldArray } from 'react-hook-form';
 import { useEffect, useState } from 'react';
 import { DevTool } from '@hookform/devtools';
 import ErrorMess from './ErrorMess';
-import { SignUpJoiSchema } from '../../schemas/joiSchema';
+import { SignUpJoiSchema } from '@schemas/joiSchema';
 import { joiResolver } from '@hookform/resolvers/joi';
 
 import { BasicButton } from './BasicButton';

@@ -13,20 +13,12 @@ import {
   Td,
   TableContainer,
 } from '@chakra-ui/react';
-import { ProjectD, projectDList } from './projectData';
+import { Project, projectList } from './projectData';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 import { FaCheckCircle } from 'react-icons/fa';
-
-function formatBudget(budget: number): string {
-  return budget.toLocaleString('en-US', {});
-}
+import { grayColor, darkColor, greenColor, whiteColor, rateColor } from '../../../constants/colors';
 
 export default function DashboardProject() {
-  const rateColor = '#E2E8F0';
-  const whiteColor = '#FFFFFF';
-  const grayColor = '#A0AEC0';
-  const darkColor = '#2D3748';
-  const greenColor = '#4FD1C5';
   return (
     <Flex
       w={'70%'}
@@ -79,8 +71,8 @@ export default function DashboardProject() {
             </Tr>
           </Thead>
           <Tbody>
-            {projectDList.map(
-              ({ iconSVG, projectName, budget, member, completionRate }: ProjectD, index) => (
+            {projectList.map(
+              ({ iconSVG, projectName, budget, member, completionRate }: Project, index) => (
                 <Tr key={index}>
                   <Td>
                     <Flex alignItems={'center'} gap={'15px'}>
@@ -137,4 +129,8 @@ export default function DashboardProject() {
       </TableContainer>
     </Flex>
   );
+}
+
+function formatBudget(budget: number): string {
+  return budget.toLocaleString('en-US', {});
 }

@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Option } from '../../types/mediumFormTypes/option';
 import { ApiGet } from '../../types/mediumFormTypes/apiTypes';
 import { Schema } from '../../schemas/zodSchema';
+
 export function useStates() {
   return useQuery({
     queryKey: ['states'],

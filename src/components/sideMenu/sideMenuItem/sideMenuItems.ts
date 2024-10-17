@@ -1,12 +1,12 @@
-import { FaChartSimple } from 'react-icons/fa6';
-import { FaHome } from 'react-icons/fa';
-import { BsCreditCard2BackFill } from 'react-icons/bs';
-import { AiFillTool } from 'react-icons/ai';
-import { FaUser } from 'react-icons/fa';
-import { IoDocument } from 'react-icons/io5';
-import { IoRocketSharp } from 'react-icons/io5';
+import { FaChartSimple as tablesIcon } from 'react-icons/fa6';
+import { FaHome as dashboardIcon } from 'react-icons/fa';
+import { BsCreditCard2BackFill as billingIcon } from 'react-icons/bs';
+import { AiFillTool as rtlIcon } from 'react-icons/ai';
+import { FaUser as profileIcon } from 'react-icons/fa';
+import { IoDocument as loginIcon } from 'react-icons/io5';
+import { IoRocketSharp as signUpIcon } from 'react-icons/io5';
 import { IconType } from 'react-icons';
-import { RiTodoFill } from 'react-icons/ri';
+import { RiTodoFill as todoIcon } from 'react-icons/ri';
 
 export interface SideMenuItem {
   icon: IconType;
@@ -16,42 +16,42 @@ export interface SideMenuItem {
 
 export const sideMenuItems: SideMenuItem[] = [
   {
-    icon: FaHome,
+    icon: dashboardIcon,
     title: 'Dashboard',
     url: '/dashboard',
   },
   {
-    icon: FaChartSimple,
+    icon: tablesIcon,
     title: 'Tables',
     url: '/tables',
   },
   {
-    icon: BsCreditCard2BackFill,
+    icon: billingIcon,
     title: 'Billing',
     url: '/billing',
   },
   {
-    icon: AiFillTool,
+    icon: rtlIcon,
     title: 'Form Playground',
     url: '/rtl',
   },
   {
-    icon: RiTodoFill,
+    icon: todoIcon,
     title: 'To-do List',
     url: '/todo',
   },
   {
-    icon: FaUser,
+    icon: profileIcon,
     title: 'Profile',
     url: '/profile',
   },
   {
-    icon: IoDocument,
-    title: 'Sign In',
+    icon: loginIcon,
+    title: 'Log In',
     url: '/login',
   },
   {
-    icon: IoRocketSharp,
+    icon: signUpIcon,
     title: 'Sign Up',
     url: '/signup',
   },

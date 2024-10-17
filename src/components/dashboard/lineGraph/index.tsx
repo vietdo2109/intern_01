@@ -1,7 +1,8 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { ResponsiveLine } from '@nivo/line';
-import { LineData } from './lineGraphData';
+import { lineData } from './lineGraphData';
 import { whiteColor, grayColor, darkColor } from '../../../constants/colors';
+
 export default function LineGraph() {
   return (
     <Flex
@@ -28,7 +29,7 @@ export default function LineGraph() {
       </Flex>
 
       <ResponsiveLine
-        data={LineData}
+        data={lineData}
         colors={['#4FD1C5', '#2D3748']}
         margin={{ top: 50, right: 22.5, bottom: 50, left: 60 }}
         yScale={{

@@ -2,7 +2,7 @@ import { Flex, Box, Text } from '@chakra-ui/react';
 import { Layout } from '../../components/layout';
 import { Footer } from '../../components/footer';
 import { Header } from '../../components/header';
-import SmallCard from '../../components/dashboard/smallCard';
+import { SmallCard } from '../../components/dashboard/smallCard';
 import BarChart from '../../components/dashboard/barChart';
 import OrdersOverview from '../../components/dashboard/orders';
 import DashboardProject from '../../components/dashboard/projects';

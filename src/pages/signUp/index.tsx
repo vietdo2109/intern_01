@@ -10,19 +10,21 @@ import {
   FormLabel,
   Switch,
 } from '@chakra-ui/react';
+import { joiResolver } from '@hookform/resolvers/joi';
+import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 import { FaFacebook } from 'react-icons/fa';
 import { FaApple } from 'react-icons/fa';
 import { FaGoogle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 import BgSignUp from '../../assets/images/signUpBg.png';
+
 import { TopNavBar } from '../../components/topNavBar';
 import { Footer } from '../../components/footer';
-import { SignUpJoiSchema } from '../../schemas/joiSchema';
-import { joiResolver } from '@hookform/resolvers/joi';
-import { useForm } from 'react-hook-form';
 import ErrorMess from '../../components/forms/ErrorMess';
+
+import { SignUpJoiSchema } from '../../schemas/joiSchema';
 import { NewAccount } from '../../types/signUpPage';
 
 export default function SignUp() {
@@ -267,7 +269,7 @@ export default function SignUp() {
                 fontSize="14px"
                 fontWeight="700"
               >
-                <Link to={'/login'}> Sign in</Link>
+                <Link to={'/login'}> Log in</Link>
               </Text>
             </Flex>
           </Flex>

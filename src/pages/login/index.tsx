@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Button, Flex, FormControl, FormLabel, Input, Switch, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { TopNavBar } from '../../components/topNavBar';
@@ -171,7 +170,7 @@ export default function Login() {
                         type="submit"
                       >
                         <Text color="#FFFFFF" fontSize="10px" fontWeight={'800'}>
-                          SIGN IN
+                          LOG IN
                         </Text>
                       </Button>
                     </Flex>

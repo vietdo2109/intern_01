@@ -1,6 +1,5 @@
 import { Flex, Text, Icon } from '@chakra-ui/react';
 import { Transaction, transactionList } from './transaction';
-
 import { IoArrowDown } from 'react-icons/io5';
 import { FaExclamation } from 'react-icons/fa6';
 import { IoArrowUp } from 'react-icons/io5';

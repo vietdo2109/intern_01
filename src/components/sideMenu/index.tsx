@@ -1,7 +1,6 @@
 import { Box, Button, Flex, HStack, Icon, Text } from '@chakra-ui/react';
 import BlackLogo from '../../assets/logos/faviconBlack.svg';
-import { SideMenuItem } from './sideMenuItem/sideMenuItems';
-import { sideMenuItems } from './sideMenuItem/sideMenuItems';
+import { SideMenuItem, sideMenuItems } from './sideMenuItem/sideMenuItems';
 import { BsFillQuestionCircleFill } from 'react-icons/bs';
 import { MenuItem } from './sideMenuItem';
 import { Link } from 'react-router-dom';

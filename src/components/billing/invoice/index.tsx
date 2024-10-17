@@ -1,7 +1,8 @@
 import { Flex, Button, Text, Icon } from '@chakra-ui/react';
-import { Invoice, InvoicesData } from './invoice';
+import { Invoice, invoicesData } from './invoice';
 import { IoDocumentText } from 'react-icons/io5';
 import { greenColor, grayColor, darkColor } from '../../../constants/colors';
+
 export default function Invoices() {
   return (
     <Flex flexDir={'column'} gap={'24.5px'} p={'24.5px'} flex={1}>
@@ -25,7 +26,7 @@ export default function Invoices() {
           </Text>
         </Button>
       </Flex>
-      {InvoicesData.map(({ date, id, cost }: Invoice) => (
+      {invoicesData.map(({ date, id, cost }: Invoice) => (
         <Flex w={'100%'} key={id} alignItems={'center'} justifyContent={'space-between'}>
           <Flex flexDir={'column'} flex={1} gap={'5px'}>
             <Text color={darkColor} fontSize="14px" fontWeight={700}>

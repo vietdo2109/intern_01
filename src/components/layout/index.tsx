@@ -5,6 +5,7 @@ import { FC } from 'react';
 type LayoutProps = {
   children: React.ReactNode;
 };
+
 export const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <Box bg="#F8F9FA" display="flex">

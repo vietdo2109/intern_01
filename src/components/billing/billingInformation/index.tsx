@@ -1,8 +1,9 @@
 import { Flex, Text, Icon } from '@chakra-ui/react';
-import { Bill, BillingInfomation } from './billingInfo';
+import { Bill, billingInfomation } from './billingInfo';
 import { RiPencilFill } from 'react-icons/ri';
 import { MdDelete } from 'react-icons/md';
 import { darkColor, bgColor, grayColor, grayTextColor } from '../../../constants/colors';
+
 export default function BillingInformation() {
   return (
     <Flex w={'100%'} p={'24px'} gap={'17.5px'} flexDir={'column'}>
@@ -10,7 +11,7 @@ export default function BillingInformation() {
         Billing Information
       </Text>
       <Flex flexDir={'column'} gap={'24px'}>
-        {BillingInfomation.map(({ user, companyName, email, vatNumber }: Bill, index: number) => (
+        {billingInfomation.map(({ user, companyName, email, vatNumber }: Bill, index: number) => (
           <Flex
             key={index}
             bg={bgColor}

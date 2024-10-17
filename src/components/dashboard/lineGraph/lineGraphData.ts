@@ -9,111 +9,111 @@ export interface LData {
   data: LDataItem[];
 }
 
-export const LineData: LData[] = [
+export const lineData: LData[] = [
   {
-    id: "japan",
-    color: "rgb(79, 209, 197)",
+    id: 'japan',
+    color: 'rgb(79, 209, 197)',
     data: [
       {
-        x: "Jan",
+        x: 'Jan',
         y: 180,
       },
       {
-        x: "Feb",
+        x: 'Feb',
         y: 220,
       },
       {
-        x: "Mar",
+        x: 'Mar',
         y: 200,
       },
       {
-        x: "Apr",
+        x: 'Apr',
         y: 350,
       },
       {
-        x: "May",
+        x: 'May',
         y: 340,
       },
       {
-        x: "Jun",
+        x: 'Jun',
         y: 480,
       },
       {
-        x: "Jul",
+        x: 'Jul',
         y: 400,
       },
       {
-        x: "Aug",
+        x: 'Aug',
         y: 320,
       },
       {
-        x: "Sep",
+        x: 'Sep',
         y: 350,
       },
       {
-        x: "Oct",
+        x: 'Oct',
         y: 250,
       },
       {
-        x: "Nov",
+        x: 'Nov',
         y: 300,
       },
       {
-        x: "Dec",
+        x: 'Dec',
         y: 420,
       },
     ],
   },
   {
-    id: "France",
-    color: "#a1d99b",
+    id: 'France',
+    color: '#a1d99b',
     data: [
       {
-        x: "Jan",
+        x: 'Jan',
         y: 500,
       },
       {
-        x: "Feb",
+        x: 'Feb',
         y: 180,
       },
       {
-        x: "Mar",
+        x: 'Mar',
         y: 300,
       },
       {
-        x: "Apr",
+        x: 'Apr',
         y: 350,
       },
       {
-        x: "May",
+        x: 'May',
         y: 280,
       },
       {
-        x: "Jun",
+        x: 'Jun',
         y: 250,
       },
       {
-        x: "Jul",
+        x: 'Jul',
         y: 190,
       },
       {
-        x: "Aug",
+        x: 'Aug',
         y: 250,
       },
       {
-        x: "Sep",
+        x: 'Sep',
         y: 190,
       },
       {
-        x: "Oct",
+        x: 'Oct',
         y: 110,
       },
       {
-        x: "Nov",
+        x: 'Nov',
         y: 140,
       },
       {
-        x: "Dec",
+        x: 'Dec',
         y: 190,
       },
     ],

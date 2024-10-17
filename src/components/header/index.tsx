@@ -1,18 +1,18 @@
 import { Flex, InputGroup, InputLeftElement, Input, Text, Icon } from '@chakra-ui/react';
 import { FaSearch } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa';
-import { FaBell } from 'react-icons/fa';
-import { IoMdSettings } from 'react-icons/io';
+import { FaBell as notificationIcon } from 'react-icons/fa';
+import { IoMdSettings as settingIcon } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { FC } from 'react';
-
+import { grayTextColor, whiteColor } from '../../constants/colors';
 type HeaderProps = {
   theme: 'dark' | 'light';
   page: string;
 };
 
 export const Header: FC<HeaderProps> = ({ theme, page }) => {
-  const themeColor = theme === 'dark' ? '#718096' : '#FFFFFF';
+  const themeColor = theme === 'dark' ? { grayTextColor } : { whiteColor };
   return (
     <Flex width="100%" justifyContent="space-between" height={'40px'}>
       <Flex flexDir="column" color={themeColor}>
@@ -43,8 +43,8 @@ export const Header: FC<HeaderProps> = ({ theme, page }) => {
           </Flex>
         </Link>
 
-        <Icon color={themeColor} w="12px" h="12px" as={IoMdSettings} cursor={'pointer'}></Icon>
-        <Icon color={themeColor} w="12px" h="12px" as={FaBell} cursor={'pointer'}></Icon>
+        <Icon color={themeColor} w="12px" h="12px" as={settingIcon} cursor={'pointer'}></Icon>
+        <Icon color={themeColor} w="12px" h="12px" as={notificationIcon} cursor={'pointer'}></Icon>
       </Flex>
     </Flex>
   );

@@ -1,8 +1,7 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, useDisclosure } from '@chakra-ui/react';
 import { Layout } from '../../components/layout';
 import { Header } from '../../components/header';
 import { MainCard } from '../../components/todo/mainCard';
-import { useDisclosure } from '@chakra-ui/react';
 import AddTaskModal from '../../components/todo/addTaskModal';
 
 export default function TodoList() {

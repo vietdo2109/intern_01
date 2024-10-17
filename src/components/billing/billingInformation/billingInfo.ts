@@ -5,7 +5,7 @@ export type Bill = {
   vatNumber: string;
 };
 
-export const BillingInfomation: Bill[] = [
+export const billingInfomation: Bill[] = [
   {
     user: 'Oliver Liam',
     companyName: 'Viking Burito',

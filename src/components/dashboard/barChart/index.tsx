@@ -1,5 +1,5 @@
 import { Box, Flex, Text, Icon } from '@chakra-ui/react';
-import { BarChartData } from './barChartData';
+import { barChartData } from './barChartData';
 import { IoWallet } from 'react-icons/io5';
 import { IoRocketSharp } from 'react-icons/io5';
 import { FaShoppingCart } from 'react-icons/fa';
@@ -7,6 +7,7 @@ import { AiFillTool } from 'react-icons/ai';
 import { IconType } from 'react-icons';
 import { FC } from 'react';
 import { whiteColor, grayColor, darkColor, greenColor } from '../../../constants/colors';
+
 export default function BarChart() {
   return (
     <Flex
@@ -50,7 +51,7 @@ export default function BarChart() {
           </Text>
         </Flex>
         <Flex flex={1} h={'100%'} justifyContent={'space-between'} alignItems={'flex-end'}>
-          {BarChartData.map((element, index) => (
+          {barChartData.map((element, index) => (
             <Box
               key={index}
               h={`${element / 5}%`}

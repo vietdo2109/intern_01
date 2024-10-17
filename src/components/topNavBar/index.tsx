@@ -90,7 +90,7 @@ export const TopNavBar: FC<TopNavBarProps> = ({
               <Icon w="11px" h="11px" color={textColor} as={FaKey} />
               <Box h="11px">
                 <Text fontSize={'10px'} fontWeight={700} color={textColor}>
-                  SIGN IN
+                  LOG IN{' '}
                 </Text>
               </Box>
             </Box>

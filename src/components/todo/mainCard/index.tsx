@@ -3,8 +3,8 @@ import { FaPlus } from 'react-icons/fa';
 import TaskCard from '../taskCard';
 import { ModalType } from '../../../types/todoTypes/modal';
 import { useDispatch } from 'react-redux';
-import { switchModalType } from '../../../state/modal/modalTypeSlice';
-import { useGetTodosQuery } from '../../../state/todos/todosApiSlice';
+import { switchModalType } from '@state/modal/modalTypeSlice';
+import { useGetTodosQuery } from '@state/todos/todosApiSlice';
 import { Todo } from '../../../state/todo/todoSlice';
 import { FC } from 'react';
 import {
@@ -13,7 +13,7 @@ import {
   greenColor,
   orangeDotColor,
   grayColor,
-} from '../../../constants/colors';
+} from '@constants/colors';
 
 type MainCardProps = {
   type: 'Planned' | 'Upcoming' | 'Completed';

@@ -4,8 +4,8 @@ import { FaCircleUser } from 'react-icons/fa6';
 import { FaKey } from 'react-icons/fa';
 import { BsBoxFill } from 'react-icons/bs';
 import { FaUser } from 'react-icons/fa';
-import WhiteLogo from '../../assets/logos/faviconWhite.svg';
-import BlackLogo from '../../assets/logos/faviconBlack.svg';
+import WhiteLogo from '@assets/logos/faviconWhite.svg';
+import BlackLogo from '@assets/logos/faviconBlack.svg';
 
 import { Link } from 'react-router-dom';
 import { FC } from 'react';

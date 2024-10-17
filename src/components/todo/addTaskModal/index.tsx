@@ -14,13 +14,13 @@ import {
 import { SubmitHandler } from 'react-hook-form';
 // import { DevTool } from "@hookform/devtools";
 import { useSelector } from 'react-redux';
-import { RootState } from '../../../state/store';
+import { RootState } from '@state/store';
 import { allTags } from '../../../types/todoTypes/tag';
 import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { Todo } from '../../../state/todo/todoSlice';
-// import { addTask } from "../../state/todo/TodoSlice";
-import { useGetTodosQuery, useCreateTodosMutation } from '../../../state/todos/todosApiSlice';
+import { Todo } from '@state/todo/todoSlice';
+// import { addTask } from "@state/todo/TodoSlice";
+import { useGetTodosQuery, useCreateTodosMutation } from '@state/todos/todosApiSlice';
 
 export default function AddTaskModal({
   isOpen,
@@ -38,12 +38,7 @@ export default function AddTaskModal({
     return maxId + 1;
   }
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm<Omit<Todo, 'id' | 'type'>>({
+  const { register, handleSubmit, reset } = useForm<Omit<Todo, 'id' | 'type'>>({
     defaultValues: {
       text: '',
       date: '',

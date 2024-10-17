@@ -1,7 +1,7 @@
-import avatarOne from '../../../assets/images/conversationAvtZero.png';
-import avatarTwo from '../../../assets/images/conversationAvtOne.png';
-import avatarThree from '../../../assets/images/conversationAvtTwo.png';
-import avatarFour from '../../../assets/images/conversationAvtThree.png';
+import avatarOne from '@assets/images/conversationAvtZero.png';
+import avatarTwo from '@assets/images/conversationAvtOne.png';
+import avatarThree from '@assets/images/conversationAvtTwo.png';
+import avatarFour from '@assets/images/conversationAvtThree.png';
 
 export type ConversationContent = {
   imgSrc: string;

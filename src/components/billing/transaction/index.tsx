@@ -4,7 +4,7 @@ import { IoArrowDown } from 'react-icons/io5';
 import { FaExclamation } from 'react-icons/fa6';
 import { IoArrowUp } from 'react-icons/io5';
 import { FaRegCalendarAlt } from 'react-icons/fa';
-import { redColor, darkColor, grayColor, greenColor } from '../../../constants/colors';
+import { redColor, darkColor, grayColor, greenColor } from '@constants/colors';
 
 export default function Transactions() {
   return (

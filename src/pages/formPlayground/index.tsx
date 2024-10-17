@@ -1,7 +1,7 @@
 import { Flex, Box } from '@chakra-ui/react';
-import { Layout } from '../../components/layout';
+import { Layout } from '@components/layout';
 // import BasicForm from '../components/forms/BasicForm';
-import MFormProvider from '../../components/forms/MFormProvider';
+import MFormProvider from '@components/forms/MFormProvider';
 
 export default function RTL() {
   return (

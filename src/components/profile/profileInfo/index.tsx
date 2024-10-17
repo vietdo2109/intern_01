@@ -2,7 +2,7 @@ import { Text, Box, Flex, Icon } from '@chakra-ui/react';
 import { FaFacebook } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 import { FaInstagramSquare } from 'react-icons/fa';
-import { darkColor, grayColor, greenColor, grayTextColor } from '../../../constants/colors';
+import { darkColor, grayColor, greenColor, grayTextColor } from '@constants/colors';
 
 export default function ProfileInfo() {
   return (

@@ -10,23 +10,23 @@ import {
   InputLeftElement,
 } from '@chakra-ui/react';
 
-import { Layout } from '../../components/layout';
-import { Footer } from '../../components/footer';
-import { Header } from '../../components/header';
-import Invoices from '../../components/billing/invoice';
-import BillingInformation from '../../components/billing/billingInformation';
-import Transactions from '../../components/billing/transaction';
+import { Layout } from '@components/layout';
+import { Footer } from '@components/footer';
+import { Header } from '@components/header';
+import Invoices from '@components/billing/invoice';
+import BillingInformation from '@components/billing/billingInformation';
+import Transactions from '@components/billing/transaction';
 
-import bgCard from '../../assets/images/billingCardBg.png';
-import cardLogo from '../../assets/svgs/masterCardGrayLogo.svg';
-import masterCardSVG from '../../assets/svgs/masterCardLogo.svg';
-import visaSVG from '../../assets/svgs/visaLogo.svg';
+import bgCard from '@assets/images/billingCardBg.png';
+import cardLogo from '@assets/svgs/masterCardGrayLogo.svg';
+import masterCardSVG from '@assets/svgs/masterCardLogo.svg';
+import visaSVG from '@assets/svgs/visaLogo.svg';
 
 import { IoWallet } from 'react-icons/io5';
 import { FaPaypal } from 'react-icons/fa6';
 import { RiPencilFill } from 'react-icons/ri';
 
-import { whiteColor, grayColor, darkColor } from '../../constants/colors';
+import { whiteColor, grayColor, darkColor } from '@constants/colors';
 
 export default function Billing() {
   return (

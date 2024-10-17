@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
 import { conversations } from './conversationData';
 import { ConversationContent } from './conversationData';
-import { darkColor, grayColor } from '../../../constants/colors';
+import { darkColor, grayColor } from '@constants/colors';
 
 export default function Conversation() {
   return (

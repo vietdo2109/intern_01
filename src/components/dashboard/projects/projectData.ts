@@ -1,15 +1,15 @@
-import adobeLogo from '../../../assets/svgs/adobeLogo.svg';
-import blueALogo from '../../../assets/svgs/blueALogo.svg';
-import slackLogo from '../../../assets/svgs/slackLogo.svg';
-import spotifyLogo from '../../../assets/svgs/spotifyLogo.svg';
-import jiraLogo from '../../../assets/svgs/jiraLogo.svg';
-import inLogo from '../../../assets/svgs/inLogo.svg';
+import adobeLogo from '@assets/svgs/adobeLogo.svg';
+import blueALogo from '@assets/svgs/blueALogo.svg';
+import slackLogo from '@assets/svgs/slackLogo.svg';
+import spotifyLogo from '@assets/svgs/spotifyLogo.svg';
+import jiraLogo from '@assets/svgs/jiraLogo.svg';
+import inLogo from '@assets/svgs/inLogo.svg';
 
-import author2 from '../../../assets/images/authorTwo.png';
-import author3 from '../../../assets/images/authorThree.png';
-import author4 from '../../../assets/images/authorFive.png';
-import author5 from '../../../assets/images/authorFive.png';
-import author6 from '../../../assets/images/authorSix.png';
+import author2 from '@assets/images/authorTwo.png';
+import author3 from '@assets/images/authorThree.png';
+import author4 from '@assets/images/authorFive.png';
+import author5 from '@assets/images/authorFive.png';
+import author6 from '@assets/images/authorSix.png';
 
 export interface Project {
   iconSVG: string;

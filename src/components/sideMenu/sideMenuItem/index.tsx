@@ -1,7 +1,7 @@
 import { Box, Flex, Icon, Text } from '@chakra-ui/react';
 import { SideMenuItem } from './sideMenuItems';
 import { NavLink } from 'react-router-dom';
-import { greenColor, darkColor, whiteColor } from '../../../constants/colors';
+import { greenColor, darkColor, whiteColor } from '@constants/colors';
 import { FC } from 'react';
 
 export const MenuItem: FC<SideMenuItem> = ({ title, icon, url }) => {

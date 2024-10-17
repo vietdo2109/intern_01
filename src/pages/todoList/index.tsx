@@ -1,8 +1,8 @@
 import { Flex, useDisclosure } from '@chakra-ui/react';
-import { Layout } from '../../components/layout';
-import { Header } from '../../components/header';
-import { MainCard } from '../../components/todo/mainCard';
-import AddTaskModal from '../../components/todo/addTaskModal';
+import { Layout } from '@components/layout';
+import { Header } from '@components/header';
+import { MainCard } from '@components/todo/mainCard';
+import AddTaskModal from '@components/todo/addTaskModal';
 
 export default function TodoList() {
   const { isOpen, onOpen, onClose } = useDisclosure();

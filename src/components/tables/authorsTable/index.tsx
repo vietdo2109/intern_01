@@ -7,7 +7,7 @@ import {
   grayTextColor,
   onlineStatusColor,
   offlinestatusColor,
-} from '../../../constants/colors';
+} from '@constants/colors';
 
 export default function AuthorsTable() {
   return (

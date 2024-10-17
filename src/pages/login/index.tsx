@@ -1,11 +1,11 @@
 import { Box, Button, Flex, FormControl, FormLabel, Input, Switch, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import { TopNavBar } from '../../components/topNavBar';
-import signInImage from '../../assets/images/signInBg.png';
-import { Footer } from '../../components/footer';
-import { loginYupSchema } from '../../schemas/yupSchema';
+import { TopNavBar } from '@components/topNavBar';
+import signInImage from '@assets/images/signInBg.png';
+import { Footer } from '@components/footer';
+import { loginYupSchema } from '@schemas/yupSchema';
 import { Formik, Form } from 'formik';
-import { bgColor } from '../../constants/colors';
+import { bgColor } from '@constants/colors';
 import { LoginFormValues } from '../../types/loginPage';
 
 export default function Login() {

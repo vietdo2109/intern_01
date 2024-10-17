@@ -1,5 +1,5 @@
 import { ApiCommon, ApiCreateEdit } from '../types/mediumFormTypes/apiTypes';
-import { Schema } from '../schemas/zodSchema';
+import { Schema } from '@schemas/zodSchema';
 
 function formatDate(date: Date) {
   const year = date.getUTCFullYear();

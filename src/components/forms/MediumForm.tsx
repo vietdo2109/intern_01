@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useFormContext, useFieldArray, useWatch, SubmitHandler } from 'react-hook-form';
-import { defaultValues, Schema } from '../../schemas/zodSchema';
+import { defaultValues, Schema } from '@schemas/zodSchema';
 import {
   useStates,
   useLanguages,
@@ -20,7 +20,7 @@ import RHFSkillSelector from './RHFSkillSelector';
 import RHFSlider from './RHFSlider';
 import RHFSwitch from './RHFSwitch';
 
-import { darkColor, grayColor } from '../../constants/colors';
+import { darkColor, grayColor } from '@constants/colors';
 export default function MediumForm() {
   const statesQuery = useStates();
   const languagestatesQuery = useLanguages();

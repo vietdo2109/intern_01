@@ -16,7 +16,7 @@ import {
 import { Project, projectList } from './projectData';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 import { FaCheckCircle } from 'react-icons/fa';
-import { grayColor, darkColor, greenColor, whiteColor, rateColor } from '../../../constants/colors';
+import { grayColor, darkColor, greenColor, whiteColor, rateColor } from '@constants/colors';
 
 export default function DashboardProject() {
   return (

@@ -1,7 +1,7 @@
 import { Flex, Button, Text, Icon } from '@chakra-ui/react';
 import { Invoice, invoicesData } from './invoice';
 import { IoDocumentText } from 'react-icons/io5';
-import { greenColor, grayColor, darkColor } from '../../../constants/colors';
+import { greenColor, grayColor, darkColor } from '@constants/colors';
 
 export default function Invoices() {
   return (

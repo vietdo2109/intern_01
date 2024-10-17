@@ -1,6 +1,6 @@
 import { Flex, Text, Icon } from '@chakra-ui/react';
 import { IconType } from 'react-icons';
-import { whiteColor, grayColor, darkColor, greenColor, redColor } from '../../../constants/colors';
+import { whiteColor, grayColor, darkColor, greenColor, redColor } from '@constants/colors';
 import { FC } from 'react';
 
 type SmallCardProps = {

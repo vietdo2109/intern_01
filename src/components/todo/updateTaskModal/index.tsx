@@ -14,12 +14,12 @@ import {
 } from '@chakra-ui/react';
 import { SubmitHandler } from 'react-hook-form';
 import { useSelector } from 'react-redux';
-import { RootState } from '../../../state/store';
+import { RootState } from '@state/store';
 import { allTags } from '../../../types/todoTypes/tag';
 import { useForm } from 'react-hook-form';
-import { Todo } from '../../../state/todo/todoSlice';
+import { Todo } from '@state/todo/todoSlice';
 // import { addTask } from "../../state/todo/TodoSlice";
-import { useGetTodosQuery, useUpdateTodoMutation } from '../../../state/todos/todosApiSlice';
+import { useGetTodosQuery, useUpdateTodoMutation } from '@state/todos/todosApiSlice';
 import { FC } from 'react';
 
 type UpdateTaskModalProps = {

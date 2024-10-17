@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { Project, projectList } from './projects';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
-import { grayColor, darkColor, greenColor, rateColor } from '../../../constants/colors';
+import { grayColor, darkColor, greenColor, rateColor } from '@constants/colors';
 
 export default function ProjectsTable() {
   return (

@@ -1,21 +1,21 @@
 import { Flex, Box, Text } from '@chakra-ui/react';
-import { Layout } from '../../components/layout';
-import { Footer } from '../../components/footer';
-import { Header } from '../../components/header';
-import { SmallCard } from '../../components/dashboard/smallCard';
-import BarChart from '../../components/dashboard/barChart';
-import OrdersOverview from '../../components/dashboard/orders';
-import DashboardProject from '../../components/dashboard/projects';
-import LineGraph from '../../components/dashboard/lineGraph';
+import { Layout } from '@components/layout';
+import { Footer } from '@components/footer';
+import { Header } from '@components/header';
+import { SmallCard } from '@components/dashboard/smallCard';
+import BarChart from '@components/dashboard/barChart';
+import OrdersOverview from '@components/dashboard/orders';
+import DashboardProject from '@components/dashboard/projects';
+import LineGraph from '@components/dashboard/lineGraph';
 
 import { IoWallet } from 'react-icons/io5';
 import { FaGlobe } from 'react-icons/fa6';
 import { IoDocumentText } from 'react-icons/io5';
 import { FaShoppingCart } from 'react-icons/fa';
 
-import OgImage from '../../assets/images/dashboardOgImg.png';
-import brookeCagle from '../../assets/images/dashboardTalkingImg.png';
-import { whiteColor, grayColor, darkColor } from '../../constants/colors';
+import OgImage from '@assets/images/dashboardOgImg.png';
+import brookeCagle from '@assets/images/dashboardTalkingImg.png';
+import { whiteColor, grayColor, darkColor } from '@constants/colors';
 
 export default function Dashboard() {
   return (

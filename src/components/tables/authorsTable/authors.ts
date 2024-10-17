@@ -1,9 +1,9 @@
-import author1 from '../../../assets/images/conversationAvtZero.png';
-import author2 from '../../../assets/images/authorTwo.png';
-import author3 from '../../../assets/images/authorThree.png';
-import author4 from '../../../assets/images/authorFive.png';
-import author5 from '../../../assets/images/authorFive.png';
-import author6 from '../../../assets/images/authorSix.png';
+import author1 from '@assets/images/conversationAvtZero.png';
+import author2 from '@assets/images/authorTwo.png';
+import author3 from '@assets/images/authorThree.png';
+import author4 from '@assets/images/authorFive.png';
+import author5 from '@assets/images/authorFive.png';
+import author6 from '@assets/images/authorSix.png';
 
 export interface Author {
   profileImg: string;

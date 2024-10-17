@@ -18,13 +18,13 @@ import { FaFacebook } from 'react-icons/fa';
 import { FaApple } from 'react-icons/fa';
 import { FaGoogle } from 'react-icons/fa';
 
-import BgSignUp from '../../assets/images/signUpBg.png';
+import BgSignUp from '@assets/images/signUpBg.png';
 
-import { TopNavBar } from '../../components/topNavBar';
-import { Footer } from '../../components/footer';
-import ErrorMess from '../../components/forms/ErrorMess';
+import { TopNavBar } from '@components/topNavBar';
+import { Footer } from '@components/footer';
+import ErrorMess from '@components/forms/ErrorMess';
 
-import { SignUpJoiSchema } from '../../schemas/joiSchema';
+import { SignUpJoiSchema } from '@schemas/joiSchema';
 import { NewAccount } from '../../types/signUpPage';
 
 export default function SignUp() {

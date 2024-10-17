@@ -1,6 +1,6 @@
-import PjImage1 from '../../../assets/images/profilePrjOne.png';
-import PjImage2 from '../../../assets/images/profilePrjTwo.png';
-import PjImage3 from '../../../assets/images/profilePrjThree.png';
+import PjImage1 from '@assets/images/profilePrjOne.png';
+import PjImage2 from '@assets/images/profilePrjTwo.png';
+import PjImage3 from '@assets/images/profilePrjThree.png';
 
 export type Project = {
   imgSrc: string;

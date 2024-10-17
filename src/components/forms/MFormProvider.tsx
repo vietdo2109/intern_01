@@ -1,11 +1,11 @@
-import { FormProvider, useForm } from "react-hook-form";
-import { zodSchema, Schema, defaultValues } from "../../schemas/ZodSchema";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { FormProvider, useForm } from 'react-hook-form';
+import { zodSchema, Schema, defaultValues } from '../../schemas/zodSchema';
+import { zodResolver } from '@hookform/resolvers/zod';
 
-import MediumForm from "./MediumForm";
+import MediumForm from './MediumForm';
 export default function MFormProvider() {
   const methods = useForm<Schema>({
-    mode: "all",
+    mode: 'all',
     resolver: zodResolver(zodSchema),
     defaultValues: defaultValues,
   });

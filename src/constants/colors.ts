@@ -1,0 +1,13 @@
+export const grayColor = '#A0AEC0';
+export const darkColor = '#2D3748';
+export const bgColor = '#F8F9FA';
+export const grayTextColor = '#718096';
+export const greenColor = '#4FD1C5';
+export const redColor = '#E53E3E ';
+export const whiteColor = '#FFFFFF';
+export const onlineStatusColor = '#48BB78';
+export const offlinestatusColor = '#CBD5E0';
+export const rateColor = '#E2E8F0';
+export const blueDotColor = '#1D81EB';
+export const orangeDotColor = '#F5A762';
+export const greenDotColor = '#79EF84';

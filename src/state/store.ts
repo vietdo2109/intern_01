@@ -1,7 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import modalTypeReducer from "./modal/ModalTypeSlice";
-import todosReducer from "./todo/TodoSlice";
-import { todosApiSlice } from "./posts/todosApiSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import modalTypeReducer from './modal/modalTypeSlice';
+import todosReducer from './todo/todoSlice';
+import { todosApiSlice } from './todos/todosApiSlice';
 
 export const store = configureStore({
   reducer: {
@@ -10,8 +10,7 @@ export const store = configureStore({
     [todosApiSlice.reducerPath]: todosApiSlice.reducer,
   },
 
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(todosApiSlice.middleware),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(todosApiSlice.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

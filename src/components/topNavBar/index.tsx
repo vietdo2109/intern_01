@@ -31,15 +31,17 @@ export const TopNavBar: FC<TopNavBarProps> = ({
       justifyContent="space-between"
       alignItems="center"
       minW="800px"
-      width="60%"
+      width="65%"
       height="70px"
       bg={bgColor}
       padding="20px"
       borderRadius="15px"
       shadow={shadow === true ? 'md' : 'none'}
+    
+    
     >
-      <Link to={'/dashboard'}>
-        <HStack justifyItems={'center'} alignItems={'center'} gap={'10px'} cursor={'pointer'}>
+      <Link to={'/dashboard'} >
+        <HStack justifyItems={'center'} alignItems={'center'} gap={'10px'} cursor={'pointer'} >
           <img src={logoColor === 'black' ? BlackLogo : WhiteLogo} alt="logo" />
           <Text fontWeight="700" color={textColor} fontSize="14px" className="title">
             PURITY UI DASHBOARD
@@ -47,12 +49,12 @@ export const TopNavBar: FC<TopNavBarProps> = ({
         </HStack>
       </Link>
 
-      <Flex alignItems={'center'} justifyContent={'space-around'} gap={'30px'}>
-        <Flex alignItems={'center'} className="nav-container">
+      <Flex alignItems={'center'}  gap={'30px'}flex={1}  justifyContent={'center'} mr={'10px'}>
+        <Flex alignItems={'center'} className="nav-container" justifyContent={'space-around'}>
           <Link to="/dashboard">
             <Box display="flex" alignItems={'center'} gap={'4px'} className="nav-container">
               <Icon w="11px" h="11px" as={BsBoxFill} color={textColor} />
-              <Box h="11px">
+              <Box>
                 <Text fontSize={'10px'} fontWeight={700} color={textColor}>
                   DASHBOARD
                 </Text>
@@ -64,7 +66,7 @@ export const TopNavBar: FC<TopNavBarProps> = ({
           <Link to="/profile">
             <Box display="flex" alignItems={'center'} gap="4px">
               <Icon w="11px" h="11px" color={textColor} as={FaUser} />
-              <Box h="11px">
+              <Box>
                 <Text fontSize={'10px'} fontWeight={700} color={textColor}>
                   PROFILE
                 </Text>
@@ -76,7 +78,7 @@ export const TopNavBar: FC<TopNavBarProps> = ({
           <Link to="/signup">
             <Box display="flex" alignItems={'center'} gap="4px">
               <Icon w="11px" h="11px" color={textColor} as={FaCircleUser} />
-              <Box h="11px">
+              <Box >
                 <Text fontSize={'10px'} fontWeight={700} color={textColor}>
                   SIGN UP
                 </Text>
@@ -88,7 +90,7 @@ export const TopNavBar: FC<TopNavBarProps> = ({
           <Link to="/login">
             <Box display="flex" alignItems={'center'} gap={'4px'}>
               <Icon w="11px" h="11px" color={textColor} as={FaKey} />
-              <Box h="11px">
+              <Box >
                 <Text fontSize={'10px'} fontWeight={700} color={textColor}>
                   LOG IN{' '}
                 </Text>
@@ -105,6 +107,7 @@ export const TopNavBar: FC<TopNavBarProps> = ({
         bg={btnColor}
         bgGradient={btnColor}
         colorScheme={btnColor}
+        mr='30px'
       >
         <Text fontSize={'10px'} fontWeight={700} color={btnTextColor}>
           Free Download

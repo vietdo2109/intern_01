@@ -37,7 +37,7 @@ export const MenuItem: FC<SideMenuItem> = ({ title, icon, url }) => {
               <Icon w="15px" h="15px" as={icon} color={isActive ? whiteColor : greenColor} />
             </Box>
 
-            <Box h="11px">
+            <Box >
               <Text fontSize={'12px'} fontWeight={700} color={darkColor}>
                 {title}
               </Text>

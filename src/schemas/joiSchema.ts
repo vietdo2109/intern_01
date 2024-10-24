@@ -4,6 +4,9 @@ export const SignUpJoiSchema = Joi.object({
   username: Joi.string().alphanum().min(3).max(30).required().messages({
     'string.empty': "Username can't be empty!!",
   }),
+  email: Joi.string().required().messages({
+    'string.empty': "Email can't be empty!!",
+  }),
   password: Joi.string()
     .min(8) // Minimum length 8 characters
     .pattern(new RegExp('(?=.*[a-z])')) // At least one lowercase letter
@@ -24,7 +27,6 @@ export const SignUpJoiSchema = Joi.object({
   age: Joi.number().min(0),
   dob: Joi.date(),
 
-  email: Joi.string(),
   social: Joi.object({
     facebook: Joi.string().alphanum().min(3).max(30).required().messages({
       'string.base': 'facebook must be a string',

@@ -6,7 +6,7 @@ import Profile from './pages/profile';
 import Dashboard from './pages/dashboard';
 import Billing from './pages/billing';
 import Tables from './pages/tables';
-import RTL from './pages/formPlayground';
+import RTL from './pages/formPlayGround';
 
 import { Navigate } from 'react-router-dom';
 import TodoList from './pages/todoList';

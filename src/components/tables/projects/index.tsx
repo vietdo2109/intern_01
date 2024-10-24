@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { Project, projectList } from './projects';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
-import { grayColor, darkColor, greenColor, rateColor } from '@constants/colors';
+import { GRAY_COLOR, DARK_COLOR, GREEN_COLOR, RATE_COLOR } from '@constants/colors';
 
 export default function ProjectsTable() {
   return (
@@ -21,16 +21,16 @@ export default function ProjectsTable() {
       <Table variant="simple">
         <Thead>
           <Tr>
-            <Th fontSize={'10px'} fontWeight={700} color={grayColor}>
+            <Th fontSize={'10px'} fontWeight={700} color={GRAY_COLOR}>
               COMPANIES
             </Th>
-            <Th fontSize={'10px'} fontWeight={700} color={grayColor}>
+            <Th fontSize={'10px'} fontWeight={700} color={GRAY_COLOR}>
               BUDGET
             </Th>
-            <Th fontSize={'10px'} fontWeight={700} color={grayColor} textAlign={'center'}>
+            <Th fontSize={'10px'} fontWeight={700} color={GRAY_COLOR} textAlign={'center'}>
               STATUS
             </Th>
-            <Th textAlign={'left'} fontSize={'10px'} fontWeight={700} color={grayColor}>
+            <Th textAlign={'left'} fontSize={'10px'} fontWeight={700} color={GRAY_COLOR}>
               COMPLETION
             </Th>
             <Th></Th>
@@ -44,7 +44,7 @@ export default function ProjectsTable() {
                   <Flex alignItems={'center'} gap={'15px'}>
                     <img src={iconSVG} alt="logo" />
                     <Flex flexDirection={'column'} justifyContent={'center'}>
-                      <Text fontSize={'14px'} fontWeight={700} color={darkColor}>
+                      <Text fontSize={'14px'} fontWeight={700} color={DARK_COLOR}>
                         {projectName}
                       </Text>
                     </Flex>
@@ -52,7 +52,7 @@ export default function ProjectsTable() {
                 </Td>
                 <Td>
                   <Flex>
-                    <Text fontSize={'14px'} fontWeight={700} color={darkColor}>
+                    <Text fontSize={'14px'} fontWeight={700} color={DARK_COLOR}>
                       ${formatBudget(budget)}
                     </Text>
                   </Flex>
@@ -60,7 +60,7 @@ export default function ProjectsTable() {
                 <Td>
                   <Flex justifyContent={'center'}>
                     <Flex>
-                      <Text fontSize={'14px'} fontWeight={700} color={darkColor}>
+                      <Text fontSize={'14px'} fontWeight={700} color={DARK_COLOR}>
                         {status}
                       </Text>
                     </Flex>
@@ -73,16 +73,16 @@ export default function ProjectsTable() {
                         textAlign={'center'}
                         fontWeight={700}
                         fontSize={'14px'}
-                        color={greenColor}
+                        color={GREEN_COLOR}
                       >
                         {completionRate}%
                       </Text>
                     </Flex>
-                    <Flex w={'100%'} h={'3px'} borderRadius={'1px'} bg={rateColor}>
+                    <Flex w={'100%'} h={'3px'} borderRadius={'1px'} bg={RATE_COLOR}>
                       <Box
                         w={`${completionRate}%`}
                         h={'100%'}
-                        bg={greenColor}
+                        bg={GREEN_COLOR}
                         borderRadius={'1px'}
                       ></Box>
                     </Flex>

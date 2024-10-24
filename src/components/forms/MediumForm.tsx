@@ -20,7 +20,7 @@ import RHFSkillSelector from './RHFSkillSelector';
 import RHFSlider from './RHFSlider';
 import RHFSwitch from './RHFSwitch';
 
-import { darkColor, grayColor } from '@constants/colors';
+import { DARK_COLOR, GRAY_COLOR } from '@constants/colors';
 export default function MediumForm() {
   const statesQuery = useStates();
   const languagestatesQuery = useLanguages();
@@ -92,7 +92,7 @@ export default function MediumForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit, onError)} style={{ display: 'flex', gap: '20px' }}>
       <Flex flexDir={'column'} gap={'5px'} alignItems={'center'} minH={'100vh'}>
-        <Text fontWeight={700} fontSize={'14px'} color={grayColor}>
+        <Text fontWeight={700} fontSize={'14px'} color={GRAY_COLOR}>
           Users
         </Text>
         <Box>
@@ -103,11 +103,11 @@ export default function MediumForm() {
               setValue('variant', 'create');
             }}
             width={'100px'}
-            bg={variant === 'create' ? darkColor : 'white'}
-            border={`2px solid ${!(variant === 'create') ? darkColor : null}`}
+            bg={variant === 'create' ? DARK_COLOR : 'white'}
+            border={`2px solid ${!(variant === 'create') ? DARK_COLOR : null}`}
           >
             <Text
-              color={!(variant === 'create') ? darkColor : 'white'}
+              color={!(variant === 'create') ? DARK_COLOR : 'white'}
               textAlign={'center'}
               justifySelf={'center'}
               mt={'4px'}
@@ -121,11 +121,11 @@ export default function MediumForm() {
             <Button
               onClick={() => handleUserCLick(user.id)}
               width={'100px'}
-              bg={user.id === selectedUser ? darkColor : 'white'}
-              border={`2px solid ${!(user.id === selectedUser) ? darkColor : null}`}
+              bg={user.id === selectedUser ? DARK_COLOR : 'white'}
+              border={`2px solid ${!(user.id === selectedUser) ? DARK_COLOR : null}`}
             >
               <Text
-                color={!(user.id === selectedUser) ? darkColor : 'white'}
+                color={!(user.id === selectedUser) ? DARK_COLOR : 'white'}
                 textAlign={'center'}
                 justifySelf={'center'}
                 mt={'4px'}
@@ -147,12 +147,12 @@ export default function MediumForm() {
             borderRadius={'10px'}
             zIndex={10}
           >
-            <Text fontWeight={700} color={errors.name ? 'red' : darkColor} fontSize={'12px'}>
+            <Text fontWeight={700} color={errors.name ? 'red' : DARK_COLOR} fontSize={'12px'}>
               Name
             </Text>
           </Box>
           <Input
-            border={errors.name ? '1px solid red' : `1px solid ${darkColor}`}
+            border={errors.name ? '1px solid red' : `1px solid ${DARK_COLOR}`}
             width="350px"
             height="50px"
             borderRadius="4px"
@@ -183,12 +183,12 @@ export default function MediumForm() {
             left={'10px'}
             zIndex={10}
           >
-            <Text fontWeight={700} color={errors.email ? 'red' : darkColor} fontSize={'12px'}>
+            <Text fontWeight={700} color={errors.email ? 'red' : DARK_COLOR} fontSize={'12px'}>
               Email
             </Text>
           </Box>
           <Input
-            border={errors.email ? '1px solid red' : `1px solid ${darkColor}`}
+            border={errors.email ? '1px solid red' : `1px solid ${DARK_COLOR}`}
             width="350px"
             height="50px"
             borderRadius="4px"
@@ -214,7 +214,7 @@ export default function MediumForm() {
 
         <Flex
           flexDir={'column'}
-          border={errors.states ? '1px solid red' : `1px solid ${darkColor}`}
+          border={errors.states ? '1px solid red' : `1px solid ${DARK_COLOR}`}
           borderRadius="4px"
           mt="4px"
           p="10px"
@@ -231,7 +231,7 @@ export default function MediumForm() {
             left={'10px'}
             zIndex={10}
           >
-            <Text fontWeight={700} color={errors.states ? 'red' : darkColor} fontSize={'12px'}>
+            <Text fontWeight={700} color={errors.states ? 'red' : DARK_COLOR} fontSize={'12px'}>
               States
             </Text>
           </Box>
@@ -241,7 +241,7 @@ export default function MediumForm() {
 
         <Flex
           flexDir={'column'}
-          border={errors.languages ? '1px solid red' : `1px solid ${darkColor}`}
+          border={errors.languages ? '1px solid red' : `1px solid ${DARK_COLOR}`}
           borderRadius="4px"
           mt="4px"
           p="10px"
@@ -258,7 +258,7 @@ export default function MediumForm() {
             left={'10px'}
             zIndex={10}
           >
-            <Text fontWeight={700} color={errors.languages ? 'red' : darkColor} fontSize={'12px'}>
+            <Text fontWeight={700} color={errors.languages ? 'red' : DARK_COLOR} fontSize={'12px'}>
               Language
             </Text>
           </Box>
@@ -268,7 +268,7 @@ export default function MediumForm() {
 
         <Flex
           flexDir={'column'}
-          border={errors.gender ? '1px solid red' : `1px solid ${darkColor}`}
+          border={errors.gender ? '1px solid red' : `1px solid ${DARK_COLOR}`}
           borderRadius="4px"
           mt="4px"
           p="10px"
@@ -285,7 +285,7 @@ export default function MediumForm() {
             left={'10px'}
             zIndex={10}
           >
-            <Text fontWeight={700} color={errors.gender ? 'red' : darkColor} fontSize={'12px'}>
+            <Text fontWeight={700} color={errors.gender ? 'red' : DARK_COLOR} fontSize={'12px'}>
               Gender
             </Text>
           </Box>
@@ -295,7 +295,7 @@ export default function MediumForm() {
 
         <Flex
           flexDir={'column'}
-          border={errors.skills ? '1px solid red' : `1px solid ${darkColor}`}
+          border={errors.skills ? '1px solid red' : `1px solid ${DARK_COLOR}`}
           borderRadius="4px"
           mt="4px"
           p="10px"
@@ -312,7 +312,7 @@ export default function MediumForm() {
             left={'10px'}
             zIndex={10}
           >
-            <Text fontWeight={700} color={errors.skills ? 'red' : darkColor} fontSize={'12px'}>
+            <Text fontWeight={700} color={errors.skills ? 'red' : DARK_COLOR} fontSize={'12px'}>
               Skills
             </Text>
           </Box>
@@ -329,13 +329,13 @@ export default function MediumForm() {
             left={'10px'}
             zIndex={10}
           >
-            <Text fontWeight={700} color={errors.dob ? 'red' : darkColor} fontSize={'12px'}>
+            <Text fontWeight={700} color={errors.dob ? 'red' : DARK_COLOR} fontSize={'12px'}>
               Date of birth
             </Text>
           </Box>
 
           <Input
-            border={errors.dob ? '1px solid red' : `1px solid ${darkColor}`}
+            border={errors.dob ? '1px solid red' : `1px solid ${DARK_COLOR}`}
             width="350px"
             height="50px"
             borderRadius="4px"
@@ -354,7 +354,7 @@ export default function MediumForm() {
         </Flex>
 
         <Flex flexDir={'column'} gap={'20px'}>
-          <Text fontWeight={700} color={errors.FEPeriod ? 'red' : darkColor} fontSize={'12px'}>
+          <Text fontWeight={700} color={errors.FEPeriod ? 'red' : DARK_COLOR} fontSize={'12px'}>
             Former Employment Period
           </Text>
           <Flex justifyContent={'space-between'} alignItems={'center'}>
@@ -369,7 +369,7 @@ export default function MediumForm() {
               >
                 <Text
                   fontWeight={700}
-                  color={errors.FEPeriod?.[0] ? 'red' : darkColor}
+                  color={errors.FEPeriod?.[0] ? 'red' : DARK_COLOR}
                   fontSize={'12px'}
                 >
                   From
@@ -377,7 +377,7 @@ export default function MediumForm() {
               </Box>
 
               <Input
-                border={errors.FEPeriod?.[0] ? '1px solid red' : `1px solid ${darkColor}`}
+                border={errors.FEPeriod?.[0] ? '1px solid red' : `1px solid ${DARK_COLOR}`}
                 width="150px"
                 height="50px"
                 borderRadius="4px"
@@ -389,7 +389,7 @@ export default function MediumForm() {
               />
               <Text sx={errorTextStyle}>{errors.FEPeriod?.message}</Text>
             </Flex>
-            <Text fontWeight={700} color={errors.FEPeriod ? 'red' : darkColor} fontSize={'12px'}>
+            <Text fontWeight={700} color={errors.FEPeriod ? 'red' : DARK_COLOR} fontSize={'12px'}>
               -
             </Text>
             <Flex flexDir={'column'} gap={'5px'} position={'relative'}>
@@ -403,7 +403,7 @@ export default function MediumForm() {
               >
                 <Text
                   fontWeight={700}
-                  color={errors.FEPeriod?.[1] ? 'red' : darkColor}
+                  color={errors.FEPeriod?.[1] ? 'red' : DARK_COLOR}
                   fontSize={'12px'}
                 >
                   To
@@ -411,7 +411,7 @@ export default function MediumForm() {
               </Box>
 
               <Input
-                border={errors.FEPeriod?.[1] ? '1px solid red' : `1px solid ${darkColor}`}
+                border={errors.FEPeriod?.[1] ? '1px solid red' : `1px solid ${DARK_COLOR}`}
                 width="150px"
                 height="50px"
                 borderRadius="4px"
@@ -426,7 +426,7 @@ export default function MediumForm() {
           </Flex>
         </Flex>
         <Flex flexDir={'column'} gap={'10px'}>
-          <Text fontWeight={700} color={errors.salaryRange ? 'red' : darkColor} fontSize={'12px'}>
+          <Text fontWeight={700} color={errors.salaryRange ? 'red' : DARK_COLOR} fontSize={'12px'}>
             Salary range
           </Text>
           <RHFSlider<Schema> name="salaryRange" label="salaryRange" />
@@ -437,7 +437,7 @@ export default function MediumForm() {
         <Flex gap={'10px'} alignItems={'center'} width={'350px'}>
           <Text
             fontWeight={700}
-            color={errors.isTeacher ? 'red' : darkColor}
+            color={errors.isTeacher ? 'red' : DARK_COLOR}
             fontSize={'12px'}
             width={'160px'}
           >
@@ -462,7 +462,7 @@ export default function MediumForm() {
                       >
                         <Text
                           fontWeight={700}
-                          color={errors.students?.[index]?.name?.message ? 'red' : darkColor}
+                          color={errors.students?.[index]?.name?.message ? 'red' : DARK_COLOR}
                           fontSize={'12px'}
                         >
                           Student name
@@ -490,7 +490,7 @@ export default function MediumForm() {
                         p="0 20px 0 20px"
                       />
                       <Button
-                        border={`1px solid ${darkColor}`}
+                        border={`1px solid ${DARK_COLOR}`}
                         type="button"
                         onClick={() => {
                           remove(index);

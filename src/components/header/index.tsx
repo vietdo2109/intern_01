@@ -5,14 +5,14 @@ import { FaBell as notificationIcon } from 'react-icons/fa';
 import { IoMdSettings as settingIcon } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { FC } from 'react';
-import { grayTextColor, whiteColor } from '@constants/colors';
+import { GRAY_TEXT_COLOR, WHITE_COLOR } from '@constants/colors';
 type HeaderProps = {
   theme: 'dark' | 'light';
   page: string;
 };
 
 export const Header: FC<HeaderProps> = ({ theme, page }) => {
-  const themeColor = theme === 'dark' ? { grayTextColor } : { whiteColor };
+  const themeColor = theme === 'dark' ? { GRAY_TEXT_COLOR } : { WHITE_COLOR };
   return (
     <Flex width="100%" justifyContent="space-between" height={'40px'}>
       <Flex flexDir="column" color={themeColor}>

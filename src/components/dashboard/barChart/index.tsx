@@ -6,14 +6,14 @@ import { FaShoppingCart } from 'react-icons/fa';
 import { AiFillTool } from 'react-icons/ai';
 import { IconType } from 'react-icons';
 import { FC } from 'react';
-import { whiteColor, grayColor, darkColor, greenColor } from '@constants/colors';
+import { WHITE_COLOR, GRAY_COLOR, DARK_COLOR, GREEN_COLOR } from '@constants/colors';
 
 export default function BarChart() {
   return (
     <Flex
       w={'40%'}
       h={'455px'}
-      bg={whiteColor}
+      bg={WHITE_COLOR}
       borderRadius={'15px'}
       p={'16px'}
       flexDir={'column'}
@@ -29,24 +29,24 @@ export default function BarChart() {
         h={'55%'}
       >
         <Flex flexDir={'column'} justifyContent={'space-between'} h={'100%'}>
-          <Text fontSize={'10px'} fontWeight={'700'} color={whiteColor}>
+          <Text fontSize={'10px'} fontWeight={'700'} color={WHITE_COLOR}>
             500
           </Text>
-          <Text fontSize={'10px'} fontWeight={'700'} color={whiteColor}>
+          <Text fontSize={'10px'} fontWeight={'700'} color={WHITE_COLOR}>
             400
           </Text>
 
-          <Text fontSize={'10px'} fontWeight={'700'} color={whiteColor}>
+          <Text fontSize={'10px'} fontWeight={'700'} color={WHITE_COLOR}>
             300
           </Text>
 
-          <Text fontSize={'10px'} fontWeight={'700'} color={whiteColor}>
+          <Text fontSize={'10px'} fontWeight={'700'} color={WHITE_COLOR}>
             200
           </Text>
-          <Text fontSize={'10px'} fontWeight={'700'} color={whiteColor}>
+          <Text fontSize={'10px'} fontWeight={'700'} color={WHITE_COLOR}>
             100
           </Text>
-          <Text fontSize={'10px'} fontWeight={'700'} color={whiteColor}>
+          <Text fontSize={'10px'} fontWeight={'700'} color={WHITE_COLOR}>
             0
           </Text>
         </Flex>
@@ -57,21 +57,21 @@ export default function BarChart() {
               h={`${element / 5}%`}
               width={'6px'}
               borderRadius={'15px'}
-              bg={whiteColor}
+              bg={WHITE_COLOR}
             ></Box>
           ))}
         </Flex>
       </Flex>
 
       <Flex flexDir={'column'}>
-        <Text fontWeight={700} fontSize={'18px'} color={darkColor}>
+        <Text fontWeight={700} fontSize={'18px'} color={DARK_COLOR}>
           Active Users
         </Text>
         <Flex gap={'5px'}>
           <Text fontSize={'14px'} fontWeight={700} color={'green'}>
             (+23)
           </Text>
-          <Text fontSize={'14px'} fontWeight={400} color={grayColor}>
+          <Text fontSize={'14px'} fontWeight={400} color={GRAY_COLOR}>
             than last week
           </Text>
         </Flex>
@@ -102,20 +102,20 @@ const BottomItem: FC<BottomItemProps> = ({ title, content, icon, rate }) => {
           h={'25px'}
           justifyContent={'center'}
           alignItems={'center'}
-          bg={greenColor}
+          bg={GREEN_COLOR}
           borderRadius={'6px'}
         >
-          <Icon as={icon} w={'12.5px'} h={'12.5px'} color={whiteColor}></Icon>
+          <Icon as={icon} w={'12.5px'} h={'12.5px'} color={WHITE_COLOR}></Icon>
         </Flex>
-        <Text fontSize={'12px'} fontWeight={700} color={grayColor}>
+        <Text fontSize={'12px'} fontWeight={700} color={GRAY_COLOR}>
           {title}
         </Text>
       </Flex>
-      <Text fontSize={'18px'} fontWeight={700} color={darkColor}>
+      <Text fontSize={'18px'} fontWeight={700} color={DARK_COLOR}>
         {content}
       </Text>
       <Box w={'100%'} h={'3px'} bg={'#E2E8F0'}>
-        <Flex h={'100%'} w={`${rate}%`} bg={greenColor}></Flex>
+        <Flex h={'100%'} w={`${rate}%`} bg={GREEN_COLOR}></Flex>
       </Box>
     </Flex>
   );

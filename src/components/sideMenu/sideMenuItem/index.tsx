@@ -1,7 +1,7 @@
 import { Box, Flex, Icon, Text } from '@chakra-ui/react';
 import { SideMenuItem } from './sideMenuItems';
 import { NavLink } from 'react-router-dom';
-import { greenColor, darkColor, whiteColor } from '@constants/colors';
+import { GREEN_COLOR, DARK_COLOR, WHITE_COLOR } from '@constants/colors';
 import { FC } from 'react';
 
 export const MenuItem: FC<SideMenuItem> = ({ title, icon, url }) => {
@@ -23,7 +23,7 @@ export const MenuItem: FC<SideMenuItem> = ({ title, icon, url }) => {
             padding="12px"
             borderRadius="15px"
             className="nav-container"
-            bg={isActive ? whiteColor : ''}
+            bg={isActive ? WHITE_COLOR : ''}
           >
             <Box
               display="flex"
@@ -31,14 +31,14 @@ export const MenuItem: FC<SideMenuItem> = ({ title, icon, url }) => {
               w="30px"
               alignItems={'center'}
               justifyContent={'center'}
-              bg={isActive ? greenColor : whiteColor}
+              bg={isActive ? GREEN_COLOR : WHITE_COLOR}
               borderRadius="12px"
             >
-              <Icon w="15px" h="15px" as={icon} color={isActive ? whiteColor : greenColor} />
+              <Icon w="15px" h="15px" as={icon} color={isActive ? WHITE_COLOR : GREEN_COLOR} />
             </Box>
 
             <Box h="11px">
-              <Text fontSize={'12px'} fontWeight={700} color={darkColor}>
+              <Text fontSize={'12px'} fontWeight={700} color={DARK_COLOR}>
                 {title}
               </Text>
             </Box>

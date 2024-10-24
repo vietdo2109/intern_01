@@ -5,11 +5,11 @@ import { BsFillQuestionCircleFill } from 'react-icons/bs';
 import { MenuItem } from './sideMenuItem';
 import { Link } from 'react-router-dom';
 import SidebarHelpBg from '@assets/images/sidebarHelpImage.png';
-import { greenColor, darkColor, whiteColor, bgColor } from '@constants/colors';
+import { GREEN_COLOR, DARK_COLOR, WHITE_COLOR, BG_COLOR } from '@constants/colors';
 
 export default function SideMenu() {
   return (
-    <Box h="100vh" bg={bgColor} w="280px" position="fixed" float="left" zIndex="1">
+    <Box h="100vh" bg={BG_COLOR} w="280px" position="fixed" float="left" zIndex="1">
       <Flex padding="40px" flexDir="column" justifyContent="center" alignItems="center">
         <Link to={'/dashboard'}>
           <HStack
@@ -39,7 +39,7 @@ export default function SideMenu() {
               <Box key={index} width="100%">
                 <Box width="100%" padding="12px">
                   <Text
-                    color={darkColor}
+                    color={DARK_COLOR}
                     fontSize="12px"
                     fontWeight="700"
                     mt="20px"
@@ -73,19 +73,19 @@ export default function SideMenu() {
             w="35px"
             alignItems={'center'}
             justifyContent={'center'}
-            bg={whiteColor}
+            bg={WHITE_COLOR}
             borderRadius="12px"
           >
-            <Icon w="18px" h="18px" as={BsFillQuestionCircleFill} color={greenColor} />
+            <Icon w="18px" h="18px" as={BsFillQuestionCircleFill} color={GREEN_COLOR} />
           </Box>
-          <Text fontSize="14px" fontWeight="700" mt="20px" color={whiteColor}>
+          <Text fontSize="14px" fontWeight="700" mt="20px" color={WHITE_COLOR}>
             Need help?
           </Text>
-          <Text fontSize="12px" fontWeight="400" color={whiteColor}>
+          <Text fontSize="12px" fontWeight="400" color={WHITE_COLOR}>
             Please check our docs
           </Text>
-          <Button mt="8.5px" colorScheme="white" bg={whiteColor} borderRadius="12px">
-            <Text textAlign="center" fontSize="10px" color={darkColor} fontWeight="700">
+          <Button mt="8.5px" colorScheme="white" bg={WHITE_COLOR} borderRadius="12px">
+            <Text textAlign="center" fontSize="10px" color={DARK_COLOR} fontWeight="700">
               DOCUMENTATION
             </Text>
           </Button>

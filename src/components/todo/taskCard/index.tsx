@@ -11,7 +11,7 @@ import {
 import Tag from '../tag';
 import { allTags } from '../../../types/todoTypes/tag';
 import { UpdateTaskModal } from '../updateTaskModal';
-import { grayColor } from '@constants/colors';
+import { GRAY_COLOR } from '@constants/colors';
 
 export default function TaskCard({ text, tags, type, date, id }: Todo) {
   const [isTaskMenuVisible, setIsTaskMenuVidible] = useState(false);
@@ -29,7 +29,7 @@ export default function TaskCard({ text, tags, type, date, id }: Todo) {
         h={'200px'}
         w={'100%'}
         borderRadius={'10px'}
-        border={`2px solid ${grayColor}`}
+        border={`2px solid ${GRAY_COLOR}`}
         flexDir={'column'}
         position={'relative'}
       >
@@ -41,7 +41,7 @@ export default function TaskCard({ text, tags, type, date, id }: Todo) {
           h={'130px'}
           shadow={'md'}
           bg={'white'}
-          border={`2px solid ${grayColor}`}
+          border={`2px solid ${GRAY_COLOR}`}
           right={'20px'}
           top={'40px'}
           borderRadius={'10px'}
@@ -51,7 +51,7 @@ export default function TaskCard({ text, tags, type, date, id }: Todo) {
           justifyContent={'space-between'}
         >
           <Flex
-            border={`2px solid ${grayColor}`}
+            border={`2px solid ${GRAY_COLOR}`}
             borderRadius={'10px'}
             flex={1}
             p={'6px'}
@@ -82,7 +82,7 @@ export default function TaskCard({ text, tags, type, date, id }: Todo) {
             </Text>
           </Flex>
           <Flex
-            border={`2px solid ${grayColor}`}
+            border={`2px solid ${GRAY_COLOR}`}
             borderRadius={'10px'}
             p={'6px'}
             flex={1}
@@ -113,7 +113,7 @@ export default function TaskCard({ text, tags, type, date, id }: Todo) {
             </Text>
           </Flex>
           <Flex
-            border={`2px solid ${grayColor}`}
+            border={`2px solid ${GRAY_COLOR}`}
             borderRadius={'10px'}
             p={'6px'}
             flex={1}
@@ -156,7 +156,7 @@ export default function TaskCard({ text, tags, type, date, id }: Todo) {
               setIsTaskMenuVidible(!isTaskMenuVisible);
             }}
           >
-            <Icon as={HiOutlineDotsHorizontal} color={grayColor} w={'20px'} h={'20px'}></Icon>
+            <Icon as={HiOutlineDotsHorizontal} color={GRAY_COLOR} w={'20px'} h={'20px'}></Icon>
           </Box>
         </Flex>
 
@@ -165,8 +165,8 @@ export default function TaskCard({ text, tags, type, date, id }: Todo) {
             {text}
           </Text>
           <Flex flex={1} alignItems={'center'} gap={'6px'} position={'absolute'} bottom={'10px'}>
-            <Icon as={FaRegCalendarAlt} color={grayColor}></Icon>
-            <Text mt={'6px'} fontWeight={'700'} fontSize={'16px'} color={grayColor}>
+            <Icon as={FaRegCalendarAlt} color={GRAY_COLOR}></Icon>
+            <Text mt={'6px'} fontWeight={'700'} fontSize={'16px'} color={GRAY_COLOR}>
               {date}
             </Text>
           </Flex>

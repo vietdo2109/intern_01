@@ -1,28 +1,28 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { ResponsiveLine } from '@nivo/line';
 import { lineData } from './lineGraphData';
-import { whiteColor, grayColor, darkColor } from '@constants/colors';
+import { WHITE_COLOR, GRAY_COLOR, DARK_COLOR } from '@constants/colors';
 
 export default function LineGraph() {
   return (
     <Flex
       w={'60%'}
       h={'455px'}
-      bg={whiteColor}
+      bg={WHITE_COLOR}
       paddingX={'21px'}
       paddingY={'28px'}
       borderRadius={'15px'}
       flexDir={'column'}
     >
       <Flex flexDir={'column'}>
-        <Text fontWeight={700} fontSize={'18px'} color={darkColor}>
+        <Text fontWeight={700} fontSize={'18px'} color={DARK_COLOR}>
           Sales overview
         </Text>
         <Flex gap={'5px'}>
           <Text fontSize={'14px'} fontWeight={700} color={'green'}>
             (+5) more
           </Text>
-          <Text fontSize={'14px'} fontWeight={400} color={grayColor}>
+          <Text fontSize={'14px'} fontWeight={400} color={GRAY_COLOR}>
             in 2024
           </Text>
         </Flex>

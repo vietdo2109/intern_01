@@ -8,11 +8,11 @@ import { useGetTodosQuery } from '@state/todos/todosApiSlice';
 import { Todo } from '../../../state/todo/todoSlice';
 import { FC } from 'react';
 import {
-  blueDotColor,
-  greenDotColor,
-  greenColor,
-  orangeDotColor,
-  grayColor,
+  BLUE_DOT_COLOR,
+  GREEN_DOT_COLOR,
+  GREEN_COLOR,
+  ORANGE_DOT_COLOR,
+  GRAY_COLOR,
 } from '@constants/colors';
 
 type MainCardProps = {
@@ -56,10 +56,10 @@ export const MainCard: FC<MainCardProps> = ({ type, modalProps }) => {
             h={'10px'}
             bg={
               type === 'Planned'
-                ? orangeDotColor
+                ? ORANGE_DOT_COLOR
                 : type === 'Upcoming'
-                ? blueDotColor
-                : greenDotColor
+                ? BLUE_DOT_COLOR
+                : GREEN_DOT_COLOR
             }
           ></Box>
           <Text fontWeight={700} fontSize={'14px'} textAlign={'center'}>
@@ -67,7 +67,7 @@ export const MainCard: FC<MainCardProps> = ({ type, modalProps }) => {
           </Text>
         </Flex>
 
-        <Text color={grayColor} fontWeight={700} fontSize={'14px'}>
+        <Text color={GRAY_COLOR} fontWeight={700} fontSize={'14px'}>
           {taskCount} {type === 'Completed' ? 'completed' : 'open'} tasks
         </Text>
       </Flex>
@@ -75,7 +75,7 @@ export const MainCard: FC<MainCardProps> = ({ type, modalProps }) => {
       <Button
         width={'100%'}
         h={'50px'}
-        bg={greenColor}
+        bg={GREEN_COLOR}
         _hover={{ bg: 'teal' }}
         display={'flex'}
         alignItems="center"

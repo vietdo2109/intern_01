@@ -13,7 +13,7 @@ import profileBgImage from '@assets/images/profileBackground.png';
 
 import { RiPencilFill } from 'react-icons/ri';
 import { BsBoxFill } from 'react-icons/bs';
-import { darkColor } from '@constants/colors';
+import { DARK_COLOR } from '@constants/colors';
 
 export default function Profile() {
   return (
@@ -89,8 +89,8 @@ export default function Profile() {
                   borderRadius={'12px'}
                   bg={'#FFFFFF'}
                 >
-                  <Icon as={BsBoxFill} color={darkColor}></Icon>
-                  <Text pt={'3px'} color={darkColor} fontSize={'10px'} fontWeight={700}>
+                  <Icon as={BsBoxFill} color={DARK_COLOR}></Icon>
+                  <Text pt={'3px'} color={DARK_COLOR} fontSize={'10px'} fontWeight={700}>
                     OVERVIEW
                   </Text>
                 </Flex>
@@ -101,8 +101,8 @@ export default function Profile() {
                   h={'35px'}
                   w={'134px'}
                 >
-                  <Icon as={BsBoxFill} color={darkColor}></Icon>
-                  <Text pt={'3px'} color={darkColor} fontSize={'10px'} fontWeight={700}>
+                  <Icon as={BsBoxFill} color={DARK_COLOR}></Icon>
+                  <Text pt={'3px'} color={DARK_COLOR} fontSize={'10px'} fontWeight={700}>
                     TEAM
                   </Text>
                 </Flex>
@@ -113,8 +113,8 @@ export default function Profile() {
                   h={'35px'}
                   w={'134px'}
                 >
-                  <Icon as={BsBoxFill} color={darkColor}></Icon>
-                  <Text pt={'3px'} color={darkColor} fontSize={'10px'} fontWeight={700}>
+                  <Icon as={BsBoxFill} color={DARK_COLOR}></Icon>
+                  <Text pt={'3px'} color={DARK_COLOR} fontSize={'10px'} fontWeight={700}>
                     PROJECTS
                   </Text>
                 </Flex>

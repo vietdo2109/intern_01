@@ -14,7 +14,7 @@ type HeaderProps = {
 export const Header: FC<HeaderProps> = ({ theme, page }) => {
   const themeColor = theme === 'dark' ? { GRAY_TEXT_COLOR } : { WHITE_COLOR };
   return (
-    <Flex width="100%" justifyContent="space-between" height={'40px'}>
+    <Flex width="100%" justifyContent="space-between" height={'40px'} >
       <Flex flexDir="column" color={themeColor}>
         <Text>Page / {page}</Text>
         <Text fontWeight={700}>{page}</Text>

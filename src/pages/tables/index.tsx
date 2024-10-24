@@ -5,7 +5,7 @@ import { Header } from '@components/header';
 import AuthorsTable from '@components/tables/authorsTable';
 import ProjectsTable from '@components/tables/projects';
 
-import { darkColor } from '@constants/colors';
+import { DARK_COLOR } from '@constants/colors';
 
 export default function Tables() {
   return (
@@ -25,7 +25,7 @@ export default function Tables() {
             gap={'23.5px'}
           >
             <Flex>
-              <Text fontSize={'18px'} fontWeight={700} color={darkColor}>
+              <Text fontSize={'18px'} fontWeight={700} color={DARK_COLOR}>
                 Authors table
               </Text>
             </Flex>
@@ -43,7 +43,7 @@ export default function Tables() {
             gap={'23.5px'}
           >
             <Flex>
-              <Text fontSize={'18px'} fontWeight={700} color={darkColor}>
+              <Text fontSize={'18px'} fontWeight={700} color={DARK_COLOR}>
                 Projects
               </Text>
             </Flex>

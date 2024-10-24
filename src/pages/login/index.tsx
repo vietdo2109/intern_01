@@ -5,7 +5,7 @@ import signInImage from '@assets/images/signInBg.png';
 import { Footer } from '@components/footer';
 import { loginYupSchema } from '@schemas/yupSchema';
 import { Formik, Form } from 'formik';
-import { bgColor } from '@constants/colors';
+import { BG_COLOR } from '@constants/colors';
 import { LoginFormValues } from '../../types/loginPage';
 
 export default function Login() {
@@ -80,7 +80,7 @@ export default function Login() {
                   <Form>
                     <Flex flexDir={'column'} gap={'24px'}>
                       <Flex flexDir={'column'}>
-                        <Text fontSize="14px" color={bgColor} ml="5px">
+                        <Text fontSize="14px" color={BG_COLOR} ml="5px">
                           Email
                         </Text>
                         <Input
@@ -115,7 +115,7 @@ export default function Login() {
                         )}
                       </Flex>
                       <Flex flexDir={'column'}>
-                        <Text fontSize="14px" color={bgColor} ml="5px">
+                        <Text fontSize="14px" color={BG_COLOR} ml="5px">
                           Password
                         </Text>
                         <Input

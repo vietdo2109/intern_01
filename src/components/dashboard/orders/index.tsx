@@ -1,26 +1,26 @@
 import { Box, Flex, Text, Icon } from '@chakra-ui/react';
 import { Oder, oders } from './order';
-import { whiteColor, darkColor, grayColor } from '@constants/colors';
+import { WHITE_COLOR, DARK_COLOR, GRAY_COLOR } from '@constants/colors';
 
 export default function OrdersOverview() {
   return (
     <Flex
       w={'30%'}
-      bg={whiteColor}
+      bg={WHITE_COLOR}
       borderRadius={'15px'}
       flexDirection={'column'}
       paddingX={'21px'}
       paddingY={'28px'}
     >
       <Flex flexDir={'column'}>
-        <Text fontWeight={700} fontSize={'18px'} color={darkColor}>
+        <Text fontWeight={700} fontSize={'18px'} color={DARK_COLOR}>
           Oders overview
         </Text>
         <Flex gap={'5px'}>
           <Text fontSize={'14px'} fontWeight={700} color={'green'}>
             (+30%)
           </Text>
-          <Text fontSize={'14px'} fontWeight={400} color={grayColor}>
+          <Text fontSize={'14px'} fontWeight={400} color={GRAY_COLOR}>
             this month
           </Text>
         </Flex>
@@ -36,10 +36,10 @@ export default function OrdersOverview() {
                 <Box width={'2px'} h={'37px'} bg={'#E2E8F0'}></Box>
               </Flex>
               <Flex flexDir={'column'} gap={'4.5px'}>
-                <Text fontWeight={700} fontSize={'14px'} color={darkColor}>
+                <Text fontWeight={700} fontSize={'14px'} color={DARK_COLOR}>
                   {title}
                 </Text>
-                <Text fontWeight={700} fontSize={'12px'} color={grayColor}>
+                <Text fontWeight={700} fontSize={'12px'} color={GRAY_COLOR}>
                   {time}
                 </Text>
               </Flex>

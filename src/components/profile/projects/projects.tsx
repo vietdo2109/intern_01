@@ -1,16 +1,16 @@
 import { Flex, Box, Text, Button } from '@chakra-ui/react';
 import { projects } from './project';
 import { Project } from './project';
-import { darkColor, grayColor, greenColor } from '@constants/colors';
+import { DARK_COLOR, GRAY_COLOR, GREEN_COLOR } from '@constants/colors';
 
 export default function Projects() {
   return (
     <Flex flex={1} bg={'#FFFFFF'} shadow="xs" borderRadius={'15px'}>
       <Flex w="100%" h="100%" flexDir="column" paddingX="21px" paddingY="28px">
-        <Text fontSize="18px" fontWeight={700} color={darkColor}>
+        <Text fontSize="18px" fontWeight={700} color={DARK_COLOR}>
           Projects
         </Text>
-        <Text fontSize="14px" fontWeight={400} color={grayColor} mb="20px">
+        <Text fontSize="14px" fontWeight={400} color={GRAY_COLOR} mb="20px">
           Architects design houses
         </Text>
         <Flex gap="24px" w="100%" h="100%">
@@ -37,13 +37,13 @@ export default function Projects() {
               </Box>
 
               <Flex flexDirection={'column'} justifyContent={'space-between'}>
-                <Text fontSize="10px" fontWeight="400" color={grayColor}>
+                <Text fontSize="10px" fontWeight="400" color={GRAY_COLOR}>
                   Project #{projectId}
                 </Text>
-                <Text fontSize="18px" fontWeight="700" color={darkColor}>
+                <Text fontSize="18px" fontWeight="700" color={DARK_COLOR}>
                   {projectName}
                 </Text>
-                <Text fontSize="12px" fontWeight="400" color={grayColor}>
+                <Text fontSize="12px" fontWeight="400" color={GRAY_COLOR}>
                   {projectDesc}
                 </Text>
               </Flex>
@@ -58,7 +58,7 @@ export default function Projects() {
                   borderRadius="12px"
                   border="2px solid #4FD1C5"
                 >
-                  <Text color={greenColor} fontSize="10px" fontWeight={700} textAlign={'center'}>
+                  <Text color={GREEN_COLOR} fontSize="10px" fontWeight={700} textAlign={'center'}>
                     VIEW ALL
                   </Text>
                 </Button>

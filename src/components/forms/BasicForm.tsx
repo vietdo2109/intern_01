@@ -7,6 +7,7 @@ import { SignUpJoiSchema } from '@schemas/joiSchema';
 import { joiResolver } from '@hookform/resolvers/joi';
 
 import { BasicButton } from './BasicButton';
+import { GRAY_COLOR } from '@constants/colors';
 
 type SubmitData = {
   username: string;
@@ -120,7 +121,7 @@ export default function BasicForm() {
                 {...register('username')}
                 type="text"
                 placeholder="Your username"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -141,7 +142,7 @@ export default function BasicForm() {
                 type="email"
                 {...register('email')}
                 placeholder="Your email address"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -168,7 +169,7 @@ export default function BasicForm() {
                 {...register('password')}
                 type="password"
                 placeholder="Your password"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -192,7 +193,7 @@ export default function BasicForm() {
                 })}
                 type="text"
                 placeholder="Your facebook"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -215,7 +216,7 @@ export default function BasicForm() {
                 })}
                 type="text"
                 placeholder="Your facebook"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -238,7 +239,7 @@ export default function BasicForm() {
                 })}
                 type="text"
                 placeholder="Your linkedIn"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -262,7 +263,7 @@ export default function BasicForm() {
                 })}
                 type="number"
                 placeholder="Your age"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -286,7 +287,7 @@ export default function BasicForm() {
                 })}
                 type="date"
                 placeholder="Your date of birth"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -310,7 +311,7 @@ export default function BasicForm() {
                 })}
                 type="number"
                 placeholder="your phone number"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -334,7 +335,7 @@ export default function BasicForm() {
                 })}
                 type="number"
                 placeholder="your phone number"
-                _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                 size="sm"
                 p="0 20px 0 20px"
               />
@@ -363,7 +364,7 @@ export default function BasicForm() {
                       })}
                       type="number"
                       placeholder="your phone number"
-                      _placeholder={{ fontSize: '14px', color: '#A0AEC0' }}
+                      _placeholder={{ fontSize: '14px', color: GRAY_COLOR }}
                       size="sm"
                       p="0 20px 0 20px"
                     />

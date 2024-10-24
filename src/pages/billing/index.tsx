@@ -26,7 +26,7 @@ import { IoWallet } from 'react-icons/io5';
 import { FaPaypal } from 'react-icons/fa6';
 import { RiPencilFill } from 'react-icons/ri';
 
-import { whiteColor, grayColor, darkColor } from '@constants/colors';
+import { WHITE_COLOR, GRAY_COLOR, DARK_COLOR } from '@constants/colors';
 
 export default function Billing() {
   return (
@@ -48,7 +48,7 @@ export default function Billing() {
           <Flex w={'100%'} h={'436px'} gap={'24px'}>
             <Flex flex={1} gap={'24px'} height={'100%'} flexDir={'column'}>
               <Flex h={'241px'} gap={'24px'}>
-                <Flex flex={1} bg={whiteColor} borderRadius="15px" overflow="hidden">
+                <Flex flex={1} bg={WHITE_COLOR} borderRadius="15px" overflow="hidden">
                   <Box
                     bgImage={bgCard}
                     w="100%"
@@ -98,7 +98,7 @@ export default function Billing() {
                 <Flex
                   h={'240px'}
                   w={'240px'}
-                  bg={whiteColor}
+                  bg={WHITE_COLOR}
                   borderRadius="15px"
                   flexDir={'column'}
                   p={'30px 0 25.5px 0'}
@@ -115,10 +115,10 @@ export default function Billing() {
                     alignItems={'center'}
                     gap={'8px'}
                   >
-                    <Text color={darkColor} fontSize={'18px'} fontWeight={700}>
+                    <Text color={DARK_COLOR} fontSize={'18px'} fontWeight={700}>
                       Salary
                     </Text>
-                    <Text color={grayColor} fontSize={'12px'} fontWeight={700}>
+                    <Text color={GRAY_COLOR} fontSize={'12px'} fontWeight={700}>
                       Belong Interactive
                     </Text>
                     <Box
@@ -126,7 +126,7 @@ export default function Billing() {
                       w="100%"
                       bgGradient="linear-gradient(90deg, rgba(224, 225, 226, 0) 0%, #E0E1E2 49.52%, rgba(224, 225, 226, 0.15625) 99.04%)"
                     ></Box>
-                    <Text color={darkColor} fontSize={'18px'} fontWeight={700}>
+                    <Text color={DARK_COLOR} fontSize={'18px'} fontWeight={700}>
                       +$2000
                     </Text>
                   </Flex>
@@ -134,7 +134,7 @@ export default function Billing() {
                 <Flex
                   h={'240px'}
                   w={'240px'}
-                  bg={whiteColor}
+                  bg={WHITE_COLOR}
                   borderRadius="15px"
                   flexDir={'column'}
                   p={'30px 0 25.5px 0'}
@@ -151,10 +151,10 @@ export default function Billing() {
                     alignItems={'center'}
                     gap={'8px'}
                   >
-                    <Text color={darkColor} fontSize={'18px'} fontWeight={700}>
+                    <Text color={DARK_COLOR} fontSize={'18px'} fontWeight={700}>
                       Paypal
                     </Text>
-                    <Text color={grayColor} fontSize={'12px'} fontWeight={700}>
+                    <Text color={GRAY_COLOR} fontSize={'12px'} fontWeight={700}>
                       Freelance Payment
                     </Text>
                     <Box
@@ -162,15 +162,15 @@ export default function Billing() {
                       w="100%"
                       bgGradient="linear-gradient(90deg, rgba(224, 225, 226, 0) 0%, #E0E1E2 49.52%, rgba(224, 225, 226, 0.15625) 99.04%)"
                     ></Box>
-                    <Text color={darkColor} fontSize={'18px'} fontWeight={700}>
+                    <Text color={DARK_COLOR} fontSize={'18px'} fontWeight={700}>
                       $455.00
                     </Text>
                   </Flex>
                 </Flex>
               </Flex>
-              <Flex bg={whiteColor} borderRadius="15px" flex={1} p={'24px'} flexDir={'column'}>
+              <Flex bg={WHITE_COLOR} borderRadius="15px" flex={1} p={'24px'} flexDir={'column'}>
                 <Flex w={'100%'} flex={1} justifyContent={'space-between'}>
-                  <Text color={darkColor} fontSize={'14px'} fontWeight={700}>
+                  <Text color={DARK_COLOR} fontSize={'14px'} fontWeight={700}>
                     Payment Method
                   </Text>
                   <Button
@@ -178,7 +178,7 @@ export default function Billing() {
                     w={'134.5px'}
                     h={'35px'}
                     borderRadius={'12px'}
-                    colorScheme={darkColor}
+                    colorScheme={DARK_COLOR}
                   >
                     <Text textAlign={'center'} fontSize={'10px'} fontWeight={700} color={'#FFFFFF'}>
                       ADD A NEW CARD
@@ -222,7 +222,7 @@ export default function Billing() {
                       height={'100%'}
                       width={'50px'}
                     >
-                      <Icon as={RiPencilFill} color={darkColor} w={'12p'} h={'12px'}></Icon>
+                      <Icon as={RiPencilFill} color={DARK_COLOR} w={'12p'} h={'12px'}></Icon>
                     </InputRightElement>
                   </InputGroup>
                   <InputGroup
@@ -261,22 +261,22 @@ export default function Billing() {
                       height={'100%'}
                       width={'50px'}
                     >
-                      <Icon as={RiPencilFill} color={darkColor} w={'12p'} h={'12px'}></Icon>
+                      <Icon as={RiPencilFill} color={DARK_COLOR} w={'12p'} h={'12px'}></Icon>
                     </InputRightElement>
                   </InputGroup>
                 </Flex>
               </Flex>
             </Flex>
-            <Flex w={'35%'} bg={whiteColor} borderRadius="15px" height={'100%'}>
+            <Flex w={'35%'} bg={WHITE_COLOR} borderRadius="15px" height={'100%'}>
               <Invoices />
             </Flex>
           </Flex>
 
           <Flex w={'100%'} gap={'24px'}>
-            <Flex w={'60%'} bg={whiteColor} borderRadius="15px" height={'100%'}>
+            <Flex w={'60%'} bg={WHITE_COLOR} borderRadius="15px" height={'100%'}>
               <BillingInformation />
             </Flex>
-            <Flex flex={1} bg={whiteColor} borderRadius="15px">
+            <Flex flex={1} bg={WHITE_COLOR} borderRadius="15px">
               <Transactions />
             </Flex>
           </Flex>

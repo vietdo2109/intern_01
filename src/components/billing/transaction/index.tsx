@@ -4,18 +4,18 @@ import { IoArrowDown } from 'react-icons/io5';
 import { FaExclamation } from 'react-icons/fa6';
 import { IoArrowUp } from 'react-icons/io5';
 import { FaRegCalendarAlt } from 'react-icons/fa';
-import { redColor, darkColor, grayColor, greenColor } from '@constants/colors';
+import { RED_COLOR, DARK_COLOR, GRAY_COLOR, GREEN_COLOR } from '@constants/colors';
 
 export default function Transactions() {
   return (
     <Flex flex={1} paddingX={'21px'} paddingY={'25px'} flexDir={'column'} gap={'18px'}>
       <Flex w={'100%'} justifyContent={'space-between'}>
-        <Text fontWeight={700} fontSize={'18px'} color={darkColor}>
+        <Text fontWeight={700} fontSize={'18px'} color={DARK_COLOR}>
           Your Transactions
         </Text>
         <Flex justifyContent={'center'} gap={'6px'}>
           <Icon as={FaRegCalendarAlt} w={'15px'} h={'15px'}></Icon>
-          <Text fontSize={'14px'} fontWeight={700} color={grayColor}>
+          <Text fontSize={'14px'} fontWeight={700} color={GRAY_COLOR}>
             {selectedDate}
           </Text>
         </Flex>
@@ -30,7 +30,7 @@ export default function Transactions() {
               justifyContent={'center'}
               alignItems={'center'}
               border={`1px solid ${
-                status === 'pending' ? grayColor : status === 'minus' ? redColor : greenColor
+                status === 'pending' ? GRAY_COLOR : status === 'minus' ? RED_COLOR : GREEN_COLOR
               }`}
               borderRadius={'50%'}
             >
@@ -43,22 +43,22 @@ export default function Transactions() {
                     : IoArrowUp
                 }
                 color={
-                  status === 'pending' ? grayColor : status === 'minus' ? redColor : greenColor
+                  status === 'pending' ? GRAY_COLOR : status === 'minus' ? RED_COLOR : GREEN_COLOR
                 }
               ></Icon>
             </Flex>
             <Flex flexDir={'column'} flex={1} gap={'4.5px'}>
-              <Text fontSize={'14px'} fontWeight={'700'} color={darkColor}>
+              <Text fontSize={'14px'} fontWeight={'700'} color={DARK_COLOR}>
                 {company}
               </Text>
-              <Text fontSize={'14px'} fontWeight={'700'} color={grayColor}>
+              <Text fontSize={'14px'} fontWeight={'700'} color={GRAY_COLOR}>
                 {time}
               </Text>
             </Flex>
             <Flex h={'100%'} alignItems={'center'}>
               <Text
                 color={
-                  status === 'pending' ? darkColor : status === 'minus' ? redColor : greenColor
+                  status === 'pending' ? DARK_COLOR : status === 'minus' ? RED_COLOR : GREEN_COLOR
                 }
                 fontWeight={700}
                 fontSize={'14px'}

@@ -16,13 +16,13 @@ import {
 import { Project, projectList } from './projectData';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 import { FaCheckCircle } from 'react-icons/fa';
-import { grayColor, darkColor, greenColor, whiteColor, rateColor } from '@constants/colors';
+import { GRAY_COLOR, DARK_COLOR, GREEN_COLOR, WHITE_COLOR, RATE_COLOR } from '@constants/colors';
 
 export default function DashboardProject() {
   return (
     <Flex
       w={'70%'}
-      bg={whiteColor}
+      bg={WHITE_COLOR}
       borderRadius={'15px'}
       flexDirection={'column'}
       paddingX={'21px'}
@@ -30,24 +30,24 @@ export default function DashboardProject() {
     >
       <Flex flexDir={'column'}>
         <Flex w={'100%'} justifyContent={'space-between'}>
-          <Text fontWeight={700} fontSize={'18px'} color={darkColor}>
+          <Text fontWeight={700} fontSize={'18px'} color={DARK_COLOR}>
             Oders overview
           </Text>
           <Icon
             as={PiDotsThreeVerticalBold}
             w={'20px'}
             h={'20px'}
-            color={grayColor}
+            color={GRAY_COLOR}
             cursor={'pointer'}
           ></Icon>
         </Flex>
 
         <Flex gap={'5px'} alignItems={'center'}>
           <Icon as={FaCheckCircle} color={'#68D391'} width={'13px'} height={'13px'}></Icon>
-          <Text mt={'4px'} fontSize={'14px'} fontWeight={700} color={grayColor}>
+          <Text mt={'4px'} fontSize={'14px'} fontWeight={700} color={GRAY_COLOR}>
             30 done
           </Text>
-          <Text mt={'4px'} fontSize={'14px'} fontWeight={400} color={grayColor}>
+          <Text mt={'4px'} fontSize={'14px'} fontWeight={400} color={GRAY_COLOR}>
             this month
           </Text>
         </Flex>
@@ -56,16 +56,16 @@ export default function DashboardProject() {
         <Table variant="simple">
           <Thead>
             <Tr>
-              <Th fontSize={'10px'} fontWeight={700} color={grayColor}>
+              <Th fontSize={'10px'} fontWeight={700} color={GRAY_COLOR}>
                 COMPANIES
               </Th>
-              <Th fontSize={'10px'} fontWeight={700} color={grayColor} ml={'10px'}>
+              <Th fontSize={'10px'} fontWeight={700} color={GRAY_COLOR} ml={'10px'}>
                 MEMBER
               </Th>
-              <Th fontSize={'10px'} fontWeight={700} color={grayColor}>
+              <Th fontSize={'10px'} fontWeight={700} color={GRAY_COLOR}>
                 BUDGET
               </Th>
-              <Th textAlign={'left'} fontSize={'10px'} fontWeight={700} color={grayColor}>
+              <Th textAlign={'left'} fontSize={'10px'} fontWeight={700} color={GRAY_COLOR}>
                 COMPLETION
               </Th>
             </Tr>
@@ -78,7 +78,7 @@ export default function DashboardProject() {
                     <Flex alignItems={'center'} gap={'15px'}>
                       <img src={iconSVG} alt="logo" />
                       <Flex flexDirection={'column'} justifyContent={'center'}>
-                        <Text fontSize={'14px'} fontWeight={700} color={darkColor}>
+                        <Text fontSize={'14px'} fontWeight={700} color={DARK_COLOR}>
                           {projectName}
                         </Text>
                       </Flex>
@@ -93,7 +93,7 @@ export default function DashboardProject() {
                   </Td>
                   <Td>
                     <Flex>
-                      <Text fontSize={'14px'} fontWeight={700} color={darkColor}>
+                      <Text fontSize={'14px'} fontWeight={700} color={DARK_COLOR}>
                         ${formatBudget(budget)}
                       </Text>
                     </Flex>
@@ -106,16 +106,16 @@ export default function DashboardProject() {
                           textAlign={'center'}
                           fontWeight={700}
                           fontSize={'14px'}
-                          color={greenColor}
+                          color={GREEN_COLOR}
                         >
                           {completionRate}%
                         </Text>
                       </Flex>
-                      <Flex w={'100%'} h={'3px'} borderRadius={'1px'} bg={rateColor}>
+                      <Flex w={'100%'} h={'3px'} borderRadius={'1px'} bg={RATE_COLOR}>
                         <Box
                           w={`${completionRate}%`}
                           h={'100%'}
-                          bg={greenColor}
+                          bg={GREEN_COLOR}
                           borderRadius={'1px'}
                         ></Box>
                       </Flex>
